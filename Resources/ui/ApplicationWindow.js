@@ -1,6 +1,18 @@
 //Application Window Component Constructor
 exports.ApplicationWindow = function() {
 
+	function eliminateDuplicates(arr) {
+		var i, len = arr.length, out = [], obj = {};
+
+		for( i = 0; i < len; i++) {
+			obj[arr[i]] = 0;
+		}
+		for(i in obj) {
+			out.push(i);
+		}
+		return out;
+	}
+
 	var self = Ti.UI.createWindow({
 		backgroundColor : '#fff',
 		fullscreen : false,
@@ -45,12 +57,26 @@ exports.ApplicationWindow = function() {
 	
 	// TODO: create table view for events
 	
+	var tableView = Ti.UI.createTableView({
+		top: "0dp",
+		height: "400dp",
+	}); 
+	
+	self.add(tableView);
+	
+	var all_events = [];
+	var table_data_events = [];
+	
+	Ti.App.addEventListener('collected_events', function(e){
+		Ti.API.log('in the event');
+		Ti.API.log('found events: '+ all_events.length);
+		alert("found events: "+ all_events.length);
+	});
+	
 	var populate_events = function() {
 		// alert('populating');
 		
 		var data = {};
-		
-		var all_events = [];
 
 		Titanium.Facebook.requestWithGraphPath('me/friends', data, 'GET', function(e) {
 			if(e.success) {
@@ -62,20 +88,37 @@ exports.ApplicationWindow = function() {
 				
 				// Ti.API.log(result.data);
 				// Ti.API.log(result.data[0]);
+				
+				var i = 0;
 
-				for (var i = 0; i < result.data.length; i++) {
+				for (i = 0; i < result.data.length; i++) {
 					
 					var friend = result.data[i];
 					
-					Ti.API.log(friend);
+					// Ti.API.log(friend);
 					
 					Titanium.Facebook.requestWithGraphPath(''+friend.id+'/events', data, 'GET', function(e) {
 						if(e.success) {
 						
 							var events_result = JSON.parse(e.result);
 							
-							Ti.API.log('found events example: ' + JSON.stringify(events_result))
-							all_events.push(e.result);
+							for (var i = 0; i < events_result.length; i++) {
+								
+							}
+							
+							// all_events.concat(events_result.data).unique();
+							
+							all_events.push(events_result.data);
+							eliminateDuplicates(all_events);
+							
+							// Ti.API.log("collected_events: " + all_events.length);
+							
+							for (var i = 0; i < all_events.length; i++) {
+								table_data_events.push({title: all_events[i].name});
+								Ti.API.log(JSON.stringify(all_events));
+							}
+							
+							tableView.setData(table_data_events);
 
 						} else {
 							if(e.error) {
@@ -87,8 +130,6 @@ exports.ApplicationWindow = function() {
 					});
 				}
 				
-				Ti.App.fireEvent('collected_events');
-				
 			} else {
 				if(e.error) {
 					alert(e.error);
@@ -98,10 +139,6 @@ exports.ApplicationWindow = function() {
 			}
 		});
 	};
-	
-	self.addEventListener('collected_events', function(){
-		Ti.API.log('found events: '+all_events.length)
-	});
 	
 	if(Titanium.Facebook.loggedIn) {
 			loginView.hide();
