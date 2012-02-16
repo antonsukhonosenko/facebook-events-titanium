@@ -1,0 +1,923 @@
+{
+	"data": [
+		{
+			"id": "502273249",
+			"name": "Yury Vetrov"
+		}, {
+			"id": "515933197",
+			"name": "Roma Jarić"
+		}, {
+			"id": "530266498",
+			"name": "Viktor Zagreba"
+		}, {
+			"id": "530548687",
+			"name": "Romko Malko"
+		}, {
+			"id": "530586063",
+			"name": "Kateryna Chepura"
+		}, {
+			"id": "531332322",
+			"name": "Pavlo Zubyuk"
+		}, {
+			"id": "534279352",
+			"name": "Vitaliy Debre"
+		}, {
+			"id": "542856823",
+			"name": "Verveda Valerie"
+		}, {
+			"id": "544807079",
+			"name": "Olga Gerasymenko"
+		}, {
+			"id": "544911344",
+			"name": "Lusiena Shum"
+		}, {
+			"id": "546093147",
+			"name": "Natalka Zubar"
+		}, {
+			"id": "551222409",
+			"name": "Vakhtang Kipiani"
+		}, {
+			"id": "556705872",
+			"name": "Otar Dovzhenko"
+		}, {
+			"id": "556986055",
+			"name": "Ira Kovalska"
+		}, {
+			"id": "557016717",
+			"name": "Yurek Yackubov"
+		}, {
+			"id": "561170340",
+			"name": "Inna Sovsun"
+		}, {
+			"id": "561768437",
+			"name": "Dmytro Potekhin"
+		}, {
+			"id": "562262180",
+			"name": "Алексей Волков"
+		}, {
+			"id": "572724396",
+			"name": "Sasha Murr"
+		}, {
+			"id": "585962521",
+			"name": "Anton Anisimov"
+		}, {
+			"id": "586309607",
+			"name": "Oresta Danylyak"
+		}, {
+			"id": "605514194",
+			"name": "Mariya Golovianko"
+		}, {
+			"id": "605564764",
+			"name": "Psoy Korolenko"
+		}, {
+			"id": "605836256",
+			"name": "Taras Boychuk"
+		}, {
+			"id": "610726313",
+			"name": "Olia Reiter"
+		}, {
+			"id": "618759079",
+			"name": "Nataliya Yena"
+		}, {
+			"id": "621493153",
+			"name": "Dmitry Satin"
+		}, {
+			"id": "623058801",
+			"name": "Oksana Verbovetska"
+		}, {
+			"id": "623072771",
+			"name": "Andriy Nahirnyak"
+		}, {
+			"id": "635435950",
+			"name": "Olena Syrinska"
+		}, {
+			"id": "636368754",
+			"name": "Helen McGiveron"
+		}, {
+			"id": "636927294",
+			"name": "Богдан Гдаль"
+		}, {
+			"id": "650148192",
+			"name": "Myroslav Hanushchak"
+		}, {
+			"id": "654864486",
+			"name": "Igor Kaufman"
+		}, {
+			"id": "656925035",
+			"name": "Bohdan Petrivsky"
+		}, {
+			"id": "657592287",
+			"name": "Kateryna Kachur"
+		}, {
+			"id": "665334524",
+			"name": "Oleksandra Tymoshenko"
+		}, {
+			"id": "666332275",
+			"name": "Tania Vodianytska"
+		}, {
+			"id": "666739378",
+			"name": "Roman Chornomaz"
+		}, {
+			"id": "667854455",
+			"name": "Сергій Ласкавий"
+		}, {
+			"id": "668089468",
+			"name": "Anna Andrievska"
+		}, {
+			"id": "669621411",
+			"name": "Oleksandr Akymenko"
+		}, {
+			"id": "669786448",
+			"name": "Kateryna Kalytko"
+		}, {
+			"id": "671590241",
+			"name": "Арміне Габріелян"
+		}, {
+			"id": "675808192",
+			"name": "Denis Poltavets"
+		}, {
+			"id": "683019546",
+			"name": "Anna Vovchenko"
+		}, {
+			"id": "683493785",
+			"name": "Maryan Dmytriv"
+		}, {
+			"id": "683509259",
+			"name": "Vira Baldyniuk"
+		}, {
+			"id": "685815706",
+			"name": "Andriy Yaroshenko"
+		}, {
+			"id": "689481572",
+			"name": "Denis Popovtsev"
+		}, {
+			"id": "692716583",
+			"name": "Sergey Protopopov"
+		}, {
+			"id": "693079467",
+			"name": "Kateryna Khinkulova"
+		}, {
+			"id": "697096782",
+			"name": "Bogdan Logvynenko"
+		}, {
+			"id": "699882962",
+			"name": "Олексій Ярославцев"
+		}, {
+			"id": "705840080",
+			"name": "Victor Mishalow"
+		}, {
+			"id": "713076522",
+			"name": "Agnieszka Ploszaj"
+		}, {
+			"id": "713843371",
+			"name": "Anna Golovchenko"
+		}, {
+			"id": "714001598",
+			"name": "Andrij Bondar"
+		}, {
+			"id": "715701058",
+			"name": "Pavlo Mryhlockyi"
+		}, {
+			"id": "716296013",
+			"name": "Magnus Handeland"
+		}, {
+			"id": "716511706",
+			"name": "Ostap Kryvdyk"
+		}, {
+			"id": "717553368",
+			"name": "Ромко Шукель"
+		}, {
+			"id": "719308359",
+			"name": "Marta Ruda"
+		}, {
+			"id": "719997441",
+			"name": "Gennady Shpak"
+		}, {
+			"id": "724973266",
+			"name": "Diana Karpenko-Kanter"
+		}, {
+			"id": "729828801",
+			"name": "Ulyana Vaskiv"
+		}, {
+			"id": "734488035",
+			"name": "Gary Olson"
+		}, {
+			"id": "739153222",
+			"name": "Iryna Kuchma"
+		}, {
+			"id": "748490390",
+			"name": "Yulia Babenko"
+		}, {
+			"id": "749177414",
+			"name": "Volodymyr Fesenko"
+		}, {
+			"id": "753718868",
+			"name": "Valerii Shypunov"
+		}, {
+			"id": "758038342",
+			"name": "Kirill Sukhonosenko"
+		}, {
+			"id": "758326319",
+			"name": "Oleksandr Demchenko"
+		}, {
+			"id": "758466631",
+			"name": "Олег Неїжкаша"
+		}, {
+			"id": "760474542",
+			"name": "Oleksandr Voroshylo"
+		}, {
+			"id": "784054537",
+			"name": "Oleg Bozhenko"
+		}, {
+			"id": "797352727",
+			"name": "Maxym Balanduh"
+		}, {
+			"id": "826378887",
+			"name": "Igor Rozkladaj"
+		}, {
+			"id": "1000941469",
+			"name": "Богдан-Олег Горобчук"
+		}, {
+			"id": "1004138875",
+			"name": "Mykhaylo Svystovych"
+		}, {
+			"id": "1006100098",
+			"name": "Serhiy Tereshchenko"
+		}, {
+			"id": "1008660981",
+			"name": "Олег Слюсарчук"
+		}, {
+			"id": "1010467874",
+			"name": "Serge Dibrov"
+		}, {
+			"id": "1014747570",
+			"name": "Yulya Yurchenko"
+		}, {
+			"id": "1017758770",
+			"name": "Olena Bunda"
+		}, {
+			"id": "1019348117",
+			"name": "Katrina Haddad-Rozkladaj"
+		}, {
+			"id": "1020970685",
+			"name": "Julia Petryk"
+		}, {
+			"id": "1035477443",
+			"name": "Viktor Kharchevskyi"
+		}, {
+			"id": "1035645639",
+			"name": "Andrey Chebotaryov"
+		}, {
+			"id": "1040612508",
+			"name": "Yaroslav Yermak"
+		}, {
+			"id": "1041627746",
+			"name": "Katya Popravka"
+		}, {
+			"id": "1043798328",
+			"name": "Viktor Garbar"
+		}, {
+			"id": "1045238808",
+			"name": "Mykola Malukha"
+		}, {
+			"id": "1045869863",
+			"name": "Nadya Prudyak"
+		}, {
+			"id": "1045965490",
+			"name": "Andrii Degeler"
+		}, {
+			"id": "1048805301",
+			"name": "Olga Chorna"
+		}, {
+			"id": "1049919817",
+			"name": "Ania Chepura"
+		}, {
+			"id": "1053265667",
+			"name": "Ivan Nyshpor"
+		}, {
+			"id": "1053975486",
+			"name": "Eugene Musienko"
+		}, {
+			"id": "1056227917",
+			"name": "Yevgeniy Ikhelzon"
+		}, {
+			"id": "1058197570",
+			"name": "Liudmila Yamschikova"
+		}, {
+			"id": "1058236121",
+			"name": "Olyadoma Karpatska"
+		}, {
+			"id": "1063238757",
+			"name": "Andrii Dorofieiev"
+		}, {
+			"id": "1082144977",
+			"name": "Roman Bydook"
+		}, {
+			"id": "1082324096",
+			"name": "Taras Antoshevskyy"
+		}, {
+			"id": "1090354115",
+			"name": "Khrystyna Stepyuk"
+		}, {
+			"id": "1090655553",
+			"name": "Eugène Kovalov"
+		}, {
+			"id": "1093944333",
+			"name": "Taras Malkovych"
+		}, {
+			"id": "1115316280",
+			"name": "Оксана Бут"
+		}, {
+			"id": "1119744655",
+			"name": "Dmitriy Dvornichenko"
+		}, {
+			"id": "1126064225",
+			"name": "Ivan Kovalisko"
+		}, {
+			"id": "1137493235",
+			"name": "Мирослава Павлик"
+		}, {
+			"id": "1139900119",
+			"name": "Sofia Dyak"
+		}, {
+			"id": "1144352994",
+			"name": "Наливайко Другий"
+		}, {
+			"id": "1148154265",
+			"name": "Nickolay Leschenko"
+		}, {
+			"id": "1153730274",
+			"name": "Tarik Cyril Amar"
+		}, {
+			"id": "1154329309",
+			"name": "Yuriy Volkov"
+		}, {
+			"id": "1158159310",
+			"name": "Yuriy Padlyak"
+		}, {
+			"id": "1175329991",
+			"name": "Bohdan Shumylovych"
+		}, {
+			"id": "1181133535",
+			"name": "Artem Fedyai"
+		}, {
+			"id": "1181512531",
+			"name": "Sándor Karácsony"
+		}, {
+			"id": "1190018110",
+			"name": "Artem Goryachkin"
+		}, {
+			"id": "1191347108",
+			"name": "Максим Крыжный"
+		}, {
+			"id": "1207607726",
+			"name": "Денис Бондаренко"
+		}, {
+			"id": "1212736135",
+			"name": "Oleg Karapuzov"
+		}, {
+			"id": "1217668243",
+			"name": "Volodymyr Viatrovych"
+		}, {
+			"id": "1222509663",
+			"name": "Наталия Великая"
+		}, {
+			"id": "1243456628",
+			"name": "Mykola Voskalo"
+		}, {
+			"id": "1248367318",
+			"name": "Lesya Kuzyk"
+		}, {
+			"id": "1249650987",
+			"name": "Agata Agatowa"
+		}, {
+			"id": "1260603017",
+			"name": "Der Kampfflieger"
+		}, {
+			"id": "1273135620",
+			"name": "Viktoriya Kudryashova"
+		}, {
+			"id": "1286052880",
+			"name": "Bob Basset"
+		}, {
+			"id": "1303740228",
+			"name": "Svetlana Gerbeeva"
+		}, {
+			"id": "1310214669",
+			"name": "Stanislav Yerko"
+		}, {
+			"id": "1321317551",
+			"name": "Oleksandr Sukholeyster"
+		}, {
+			"id": "1329335577",
+			"name": "Лина Гимпельсон"
+		}, {
+			"id": "1340333483",
+			"name": "Marek Friedman"
+		}, {
+			"id": "1348210578",
+			"name": "Aleksey Kirichenko"
+		}, {
+			"id": "1360674484",
+			"name": "Roman Rak"
+		}, {
+			"id": "1382916266",
+			"name": "Pavel Obod"
+		}, {
+			"id": "1383934379",
+			"name": "Kholodylo Kateryna"
+		}, {
+			"id": "1394731049",
+			"name": "Dana Vynnytska"
+		}, {
+			"id": "1398458548",
+			"name": "Kateryna Hirna"
+		}, {
+			"id": "1416769585",
+			"name": "Kateryna Didyk"
+		}, {
+			"id": "1419427126",
+			"name": "Egor Tatarenko"
+		}, {
+			"id": "1429500210",
+			"name": "Uliana Bakh"
+		}, {
+			"id": "1431853632",
+			"name": "Oleg Makarov"
+		}, {
+			"id": "1439688030",
+			"name": "Shipunov Ilya"
+		}, {
+			"id": "1459605364",
+			"name": "Kateryna Nefidova"
+		}, {
+			"id": "1463931511",
+			"name": "Hanna Hrabarska"
+		}, {
+			"id": "1480554336",
+			"name": "Olena Zanichkovska"
+		}, {
+			"id": "1517050692",
+			"name": "Сергей Суровикин"
+		}, {
+			"id": "1518423442",
+			"name": "Rost Tatomyr"
+		}, {
+			"id": "1542166201",
+			"name": "Maria Ruban"
+		}, {
+			"id": "1571041508",
+			"name": "Denys Bigus"
+		}, {
+			"id": "1577076100",
+			"name": "Igor Pavlyuk"
+		}, {
+			"id": "1585395086",
+			"name": "Kakha Bendukidze"
+		}, {
+			"id": "1586301339",
+			"name": "Nastya Seredkina"
+		}, {
+			"id": "1594868849",
+			"name": "Andrii Senko"
+		}, {
+			"id": "1595364861",
+			"name": "Olga Giwojna"
+		}, {
+			"id": "1606102513",
+			"name": "Marina Ryashchykova"
+		}, {
+			"id": "1625316701",
+			"name": "Katerina Kushnarenko"
+		}, {
+			"id": "1627626852",
+			"name": "Olena Dub"
+		}, {
+			"id": "1631732575",
+			"name": "Svitlana Taranenko"
+		}, {
+			"id": "1655960477",
+			"name": "Tatyana Azimova"
+		}, {
+			"id": "1685179282",
+			"name": "Andrey Dostlev"
+		}, {
+			"id": "1695720316",
+			"name": "Yana Racyborynska"
+		}, {
+			"id": "1706820346",
+			"name": "Solomia Repko"
+		}, {
+			"id": "1751557720",
+			"name": "Аня Матвеева"
+		}, {
+			"id": "1793922091",
+			"name": "Кирилл Слатин"
+		}, {
+			"id": "1801188604",
+			"name": "Ігор Степура"
+		}, {
+			"id": "1811236664",
+			"name": "Константин Фистик"
+		}, {
+			"id": "1824353888",
+			"name": "Сергій Жадан"
+		}, {
+			"id": "1831033447",
+			"name": "Ivan Marunyak"
+		}, {
+			"id": "1831728309",
+			"name": "Maria Zaichenko"
+		}, {
+			"id": "1836063897",
+			"name": "Andriy Podanenko"
+		}, {
+			"id": "1837998431",
+			"name": "Elena Yakubova"
+		}, {
+			"id": "1843413624",
+			"name": "Danylo Pertsov"
+		}, {
+			"id": "1846137973",
+			"name": "Oleh Kotsarev"
+		}, {
+			"id": "100000019230851",
+			"name": "Svetlana Bessonova"
+		}, {
+			"id": "100000028303662",
+			"name": "Анна Боровик"
+		}, {
+			"id": "100000037300656",
+			"name": "Artyom Rozumenko"
+		}, {
+			"id": "100000051831354",
+			"name": "Zurab Alasania"
+		}, {
+			"id": "100000066317123",
+			"name": "Sebastian Loerscher"
+		}, {
+			"id": "100000071874355",
+			"name": "Валерій Агєєв"
+		}, {
+			"id": "100000084693907",
+			"name": "Галя Тельнюк"
+		}, {
+			"id": "100000097213396",
+			"name": "Гридковець Людмила"
+		}, {
+			"id": "100000102616450",
+			"name": "Olga Dubchak"
+		}, {
+			"id": "100000132986725",
+			"name": "Kostyantyn Cherems'ky"
+		}, {
+			"id": "100000146219124",
+			"name": "Анатолий Якубов"
+		}, {
+			"id": "100000146903440",
+			"name": "Iryna Kovalenko"
+		}, {
+			"id": "100000160088888",
+			"name": "Olha Vesnianka"
+		}, {
+			"id": "100000162310972",
+			"name": "Місько Барбара"
+		}, {
+			"id": "100000177813697",
+			"name": "Zhanna Yuskevych"
+		}, {
+			"id": "100000179480111",
+			"name": "Marko Halanevych"
+		}, {
+			"id": "100000186725053",
+			"name": "Catherine Vladimirskaya"
+		}, {
+			"id": "100000198771637",
+			"name": "Олександр Положинський"
+		}, {
+			"id": "100000205374110",
+			"name": "Валерій Гладунець"
+		}, {
+			"id": "100000212019597",
+			"name": "Viktor Kruk"
+		}, {
+			"id": "100000223489460",
+			"name": "Anya Ustenko"
+		}, {
+			"id": "100000245082241",
+			"name": "Ulyana Tymoshenko"
+		}, {
+			"id": "100000256092919",
+			"name": "Marat Yakupov"
+		}, {
+			"id": "100000317266422",
+			"name": "Vitaly Petrivskij"
+		}, {
+			"id": "100000331854049",
+			"name": "Olesia Koval"
+		}, {
+			"id": "100000352338013",
+			"name": "Sergii Korostelov"
+		}, {
+			"id": "100000379341296",
+			"name": "Garenetska Nina"
+		}, {
+			"id": "100000407377054",
+			"name": "Katya Moroz"
+		}, {
+			"id": "100000408053339",
+			"name": "Генадій Заречнюк"
+		}, {
+			"id": "100000420104632",
+			"name": "Anastasia Shulzhenko"
+		}, {
+			"id": "100000426162319",
+			"name": "Tatyana Landesman"
+		}, {
+			"id": "100000433447131",
+			"name": "Sashko Ushkalov"
+		}, {
+			"id": "100000443368292",
+			"name": "Serhiy Chebotaryov"
+		}, {
+			"id": "100000465385061",
+			"name": "Antonina Maliei"
+		}, {
+			"id": "100000496196544",
+			"name": "Сергій Чурай"
+		}, {
+			"id": "100000502530812",
+			"name": "Уляна Ходорівська"
+		}, {
+			"id": "100000510973161",
+			"name": "Ярослав Гребенюк"
+		}, {
+			"id": "100000522672769",
+			"name": "Faina Citizen"
+		}, {
+			"id": "100000524057648",
+			"name": "Genek Tomashko"
+		}, {
+			"id": "100000543024721",
+			"name": "Daiva Simanaviciute-Tereshchenko"
+		}, {
+			"id": "100000547248228",
+			"name": "Вело Ua"
+		}, {
+			"id": "100000548601897",
+			"name": "Ivan Burmistrov"
+		}, {
+			"id": "100000550240481",
+			"name": "Oles Doniy"
+		}, {
+			"id": "100000550283473",
+			"name": "Tatyana Drozdyuk"
+		}, {
+			"id": "100000560537150",
+			"name": "Roman  Kul'chuns'kyj"
+		}, {
+			"id": "100000576163651",
+			"name": "Тереза Славович"
+		}, {
+			"id": "100000581232902",
+			"name": "Eugene Krevenets"
+		}, {
+			"id": "100000582980763",
+			"name": "Lyubomyr Oliynyk"
+		}, {
+			"id": "100000662247108",
+			"name": "Ivan Sukhonosenko"
+		}, {
+			"id": "100000687464630",
+			"name": "Ольга Селезнёва"
+		}, {
+			"id": "100000708976538",
+			"name": "Lesya Pidoprygora"
+		}, {
+			"id": "100000712863374",
+			"name": "Asya Fruman"
+		}, {
+			"id": "100000725716043",
+			"name": "Olexiy Slobodyanyuk"
+		}, {
+			"id": "100000731979046",
+			"name": "Iryna Matsevko"
+		}, {
+			"id": "100000732651762",
+			"name": "Elizaveta Kirizii"
+		}, {
+			"id": "100000733454660",
+			"name": "Lidia Onazkaya"
+		}, {
+			"id": "100000741637295",
+			"name": "Резниченко Дмитрий"
+		}, {
+			"id": "100000776543534",
+			"name": "Andrij Shevchenko"
+		}, {
+			"id": "100000781773425",
+			"name": "Іванна Скиба-Якубова"
+		}, {
+			"id": "100000789351933",
+			"name": "Oleksiy Chekal"
+		}, {
+			"id": "100000818997433",
+			"name": "Северин Данилейко"
+		}, {
+			"id": "100000825440710",
+			"name": "Mark Tokar"
+		}, {
+			"id": "100000841722311",
+			"name": "Ira Baturevych"
+		}, {
+			"id": "100000842352654",
+			"name": "Олесь Чумаков"
+		}, {
+			"id": "100000875444748",
+			"name": "Ярослав Ляхновський"
+		}, {
+			"id": "100000884632931",
+			"name": "Kirill Rozhkovskiy"
+		}, {
+			"id": "100000899323536",
+			"name": "Yurii Chaban"
+		}, {
+			"id": "100000948969620",
+			"name": "Olga Giwojno"
+		}, {
+			"id": "100000964155211",
+			"name": "Natalka Vlasjuk"
+		}, {
+			"id": "100001001087191",
+			"name": "Alex Mercer"
+		}, {
+			"id": "100001010165477",
+			"name": "Denis Priimagi"
+		}, {
+			"id": "100001059399876",
+			"name": "Мар'яна П'єцух"
+		}, {
+			"id": "100001093725613",
+			"name": "Ореста Шпак"
+		}, {
+			"id": "100001107203705",
+			"name": "Alexandra Golub"
+		}, {
+			"id": "100001115400160",
+			"name": "Roman Yakimovich"
+		}, {
+			"id": "100001122214283",
+			"name": "Kiev Hostel"
+		}, {
+			"id": "100001132131027",
+			"name": "Anastasiia Petrova"
+		}, {
+			"id": "100001140333287",
+			"name": "Inna Ivasyuk"
+		}, {
+			"id": "100001172872457",
+			"name": "Serge Golodychenko"
+		}, {
+			"id": "100001236345373",
+			"name": "Алексей Варикаша"
+		}, {
+			"id": "100001259060681",
+			"name": "Анна Богородіченко"
+		}, {
+			"id": "100001343182745",
+			"name": "Степан Сивик"
+		}, {
+			"id": "100001363359512",
+			"name": "Natalya Buts"
+		}, {
+			"id": "100001394092417",
+			"name": "Алексей Чуксин"
+		}, {
+			"id": "100001418451676",
+			"name": "Юлия Цюх"
+		}, {
+			"id": "100001466162040",
+			"name": "Taya Kholodova"
+		}, {
+			"id": "100001470271092",
+			"name": "Dmitriy Dostatnev"
+		}, {
+			"id": "100001482072750",
+			"name": "Проект КвартирниК"
+		}, {
+			"id": "100001514828265",
+			"name": "Український католицький університет UCuniversity"
+		}, {
+			"id": "100001526364513",
+			"name": "Денис Олейников"
+		}, {
+			"id": "100001544802526",
+			"name": "Тетяна Лебедєва"
+		}, {
+			"id": "100001572880380",
+			"name": "Nataliia Tyshkevych"
+		}, {
+			"id": "100001583980483",
+			"name": "Katerina Botsman"
+		}, {
+			"id": "100001621932764",
+			"name": "Наталья Стилсон"
+		}, {
+			"id": "100001625980263",
+			"name": "Владимир Боцман"
+		}, {
+			"id": "100001655704757",
+			"name": "Borys Gudziak"
+		}, {
+			"id": "100001658436692",
+			"name": "Bogdan Butkevich"
+		}, {
+			"id": "100001663012633",
+			"name": "Maria Slobodenuk"
+		}, {
+			"id": "100001676273309",
+			"name": "Solomija Danyljak"
+		}, {
+			"id": "100001677812279",
+			"name": "Софія Скиба"
+		}, {
+			"id": "100001696450702",
+			"name": "Yaroslav Pidstryhach"
+		}, {
+			"id": "100001698563358",
+			"name": "Українська книгарня Смолоскип"
+		}, {
+			"id": "100001759082985",
+			"name": "Vadym Lolin"
+		}, {
+			"id": "100001768171754",
+			"name": "Amund Myklebust"
+		}, {
+			"id": "100001770039748",
+			"name": "Пётр Обухов"
+		}, {
+			"id": "100001837670069",
+			"name": "Antoni Andrzej Giwojna"
+		}, {
+			"id": "100001841161532",
+			"name": "Павло Солодько"
+		}, {
+			"id": "100001845832522",
+			"name": "Volodymyr Zolotorov"
+		}, {
+			"id": "100001854153717",
+			"name": "Харків. Асоціація Власників Зброї"
+		}, {
+			"id": "100001864437317",
+			"name": "Alex Chyrva"
+		}, {
+			"id": "100001886306639",
+			"name": "Serhiy Kvit"
+		}, {
+			"id": "100001889007936",
+			"name": "Татьяна Сухоносенко"
+		}, {
+			"id": "100001917077005",
+			"name": "Александр Олешко"
+		}, {
+			"id": "100001970035377",
+			"name": "Ольга Тягло"
+		}, {
+			"id": "100001981583969",
+			"name": "Kostya Levin"
+		}, {
+			"id": "100002124980779",
+			"name": "Eugene Manko"
+		}, {
+			"id": "100002184498057",
+			"name": "Анастасия Бондаренко"
+		}, {
+			"id": "100002200692030",
+			"name": "Artem Borovenskij"
+		}, {
+			"id": "100002311055779",
+			"name": "Marina  Ratuch"
+		}, {
+			"id": "100002590410413",
+			"name": "Jay  Sneg"
+		}, {
+			"id": "100002762361435",
+			"name": "Cannelle Smith"
+		}, {
+			"id": "100002799045919",
+			"name": "Ivan Merioti"
+		}, {
+			"id": "100002844332234",
+			"name": "Sheila Suarez"
+		}, {
+			"id": "100003124503236",
+			"name": "Илья Ноздреватенков"
+		}, {
+			"id": "100003573881988",
+			"name": "Nastya  Mishchenko"
+		}
+	],
+	"paging": {
+		"next": "https://graph.facebook.com/me/friends?sdk=ios&sdk_version=2&access_token=AAACqwEYvjuMBAPPw81Kz7fzwHZAB48ZAH9znRZBnT5Os4u6r77fUdz884dZAq3wmEH1QZCpOQu3PaiUvO4EO5cAr6Mm0TPZCFC0jrxMTLuiAZDZD&format=json&limit=5000&offset=5000&__after_id=100003573881988"
+	}
+}

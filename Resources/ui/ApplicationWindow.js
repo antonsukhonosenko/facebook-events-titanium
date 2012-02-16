@@ -29,7 +29,6 @@ exports.ApplicationWindow = function() {
 
 	loginView.add(buttonFacebookLogin);
 
-
 	var buttonFacebookLogout = Ti.UI.createButton({
 		title : "Facebook Disconnect",
 		top : "420dp",
@@ -44,14 +43,52 @@ exports.ApplicationWindow = function() {
 	self.add(buttonFacebookLogout);
 	self.add(loginView);
 	
+	// TODO: create table view for events
+	
 	var populate_events = function() {
 		// alert('populating');
 		
 		var data = {};
+		
+		var all_events = [];
 
-		Titanium.Facebook.requestWithGraphPath('me/events', data, 'GET', function(e) {
+		Titanium.Facebook.requestWithGraphPath('me/friends', data, 'GET', function(e) {
 			if(e.success) {
 				alert("Success! Returned from FB: " + e.result);
+				
+				var result = JSON.parse(e.result);
+				
+				// var result = eval('('+this.responseText+')');
+				
+				// Ti.API.log(result.data);
+				// Ti.API.log(result.data[0]);
+
+				for (var i = 0; i < result.data.length; i++) {
+					
+					var friend = result.data[i];
+					
+					Ti.API.log(friend);
+					
+					Titanium.Facebook.requestWithGraphPath(''+friend.id+'/events', data, 'GET', function(e) {
+						if(e.success) {
+						
+							var events_result = JSON.parse(e.result);
+							
+							Ti.API.log('found events example: ' + JSON.stringify(events_result))
+							all_events.push(e.result);
+
+						} else {
+							if(e.error) {
+								alert(e.error);
+							} else {
+								alert("Unknown result");
+							}
+						}
+					});
+				}
+				
+				Ti.App.fireEvent('collected_events');
+				
 			} else {
 				if(e.error) {
 					alert(e.error);
@@ -61,6 +98,10 @@ exports.ApplicationWindow = function() {
 			}
 		});
 	};
+	
+	self.addEventListener('collected_events', function(){
+		Ti.API.log('found events: '+all_events.length)
+	});
 	
 	if(Titanium.Facebook.loggedIn) {
 			loginView.hide();

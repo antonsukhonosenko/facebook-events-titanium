@@ -1,0 +1,72 @@
+{
+	"data": [
+		{
+			"id": "153943771375253",
+			"name": "Make it GREEN! Фотоконкурс к презентации альбома Нино Катамадзе в Киеве",
+			"end_time": "2012-04-03T22:00:00",
+			"location": "Дворец Украина",
+			"start_time": "2012-04-03T19:00:00",
+			"rsvp_status": "unsure"
+		}, {
+			"id": "304690632912516",
+			"name": "16 марта: Леонид Фёдоров и Владимир Волков в Jazztere!!!",
+			"end_time": "2012-03-16T23:00:00",
+			"location": "Jazzter",
+			"start_time": "2012-03-16T20:00:00",
+			"rsvp_status": "attending"
+		}, {
+			"id": "340304875992337",
+			"name": "2 марта: Псой Короленко в Jazztere!!!",
+			"end_time": "2012-03-02T23:00:00",
+			"location": "Jazzter",
+			"start_time": "2012-03-02T20:00:00",
+			"rsvp_status": "attending"
+		}, {
+			"id": "312626165456218",
+			"name": "Раскардаш Оркестр в Москве!",
+			"end_time": "2012-02-20T23:00:00",
+			"location": "В клубе \"Гиперион\"",
+			"start_time": "2012-02-20T20:00:00",
+			"rsvp_status": "attending"
+		}, {
+			"id": "120117271444339",
+			"name": "Раскардаш оркестр в Питере!",
+			"end_time": "2012-02-19T21:00:00",
+			"location": "Saint Petersburg, Saint Petersburg City, Russia",
+			"start_time": "2012-02-19T18:00:00",
+			"rsvp_status": "attending"
+		}, {
+			"id": "294627847260377",
+			"name": "BÜLBÜL MANUSH + CD RELEASE",
+			"end_time": "2012-02-15T00:00:00",
+			"location": "Kulturzentrum E-Werk",
+			"start_time": "2012-02-14T21:00:00",
+			"rsvp_status": "unsure"
+		}, {
+			"id": "335468989808851",
+			"name": "ЖЕНЯ ЛОПАТНИК. L'aigle Noir",
+			"end_time": "2012-02-12T22:00:00",
+			"location": "НКЦ \"Indie\"",
+			"start_time": "2012-02-12T19:00:00",
+			"rsvp_status": "unsure"
+		}, {
+			"id": "124268207693536",
+			"name": "Женя Лопатник в проекте  \"L'Agle Noir\" - \"Черный орел\".",
+			"end_time": "2012-02-12T22:00:00",
+			"location": "В Культурном Центре \"Indie\"  (ул Чернышевсая 4/6)",
+			"start_time": "2012-02-12T19:00:00",
+			"rsvp_status": "unsure"
+		}, {
+			"id": "235108506569840",
+			"name": "Раскардаш Оркестр в кофейне «Friends»",
+			"end_time": "2012-02-03T22:30:00",
+			"location": "Friends Cafe",
+			"start_time": "2012-02-03T19:30:00",
+			"rsvp_status": "attending"
+		}
+	],
+	"paging": {
+		"previous": "https://graph.facebook.com/100002124980779/events?sdk=ios&sdk_version=2&access_token=AAACqwEYvjuMBABA7oZCyRaSAe6WHonHmcLUwAmbzCYUOZA5pRTlBPpsrfMqCKofBCi9PsGmuvJiOlvbyzQYSTaUsGBYJkN9NNTVyFYTwZDZD&format=json&limit=25&since=1333479600&__paging_token=153943771375253&__previous=1",
+		"next": "https://graph.facebook.com/100002124980779/events?sdk=ios&sdk_version=2&access_token=AAACqwEYvjuMBABA7oZCyRaSAe6WHonHmcLUwAmbzCYUOZA5pRTlBPpsrfMqCKofBCi9PsGmuvJiOlvbyzQYSTaUsGBYJkN9NNTVyFYTwZDZD&format=json&limit=25&until=1328297400&__paging_token=235108506569840"
+	}
+}
