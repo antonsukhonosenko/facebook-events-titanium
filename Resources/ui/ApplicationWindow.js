@@ -34,6 +34,7 @@ exports.ApplicationWindow = function() {
 	buttonFacebookLogin.addEventListener('click', function() {
 		if(Titanium.Facebook.loggedIn) {
 			loginView.hide();
+			tableView.show();
 		} else {
 			Titanium.Facebook.authorize();
 		}
@@ -50,6 +51,7 @@ exports.ApplicationWindow = function() {
 	buttonFacebookLogout.addEventListener('click', function(e) {
 		Titanium.Facebook.logout();
 		loginView.show();
+		tableView.hide();
 	});
 
 	self.add(buttonFacebookLogout);
@@ -66,16 +68,9 @@ exports.ApplicationWindow = function() {
 	
 	var all_events = [];
 	var table_data_events = [];
-	
-	Ti.App.addEventListener('collected_events', function(e){
-		Ti.API.log('in the event');
-		Ti.API.log('found events: '+ all_events.length);
-		alert("found events: "+ all_events.length);
-	});
-	
+
 	var populate_events = function() {
-		// alert('populating');
-		
+
 		var data = {};
 
 		Titanium.Facebook.requestWithGraphPath('me/friends', data, 'GET', function(e) {
@@ -83,40 +78,30 @@ exports.ApplicationWindow = function() {
 				alert("Success! Returned from FB: " + e.result);
 				
 				var result = JSON.parse(e.result);
-				
-				// var result = eval('('+this.responseText+')');
-				
-				// Ti.API.log(result.data);
-				// Ti.API.log(result.data[0]);
-				
-				var i = 0;
 
-				for (i = 0; i < result.data.length; i++) {
+				for (var i = 0; i < result.data.length; i++) {
 					
 					var friend = result.data[i];
-					
-					// Ti.API.log(friend);
 					
 					Titanium.Facebook.requestWithGraphPath(''+friend.id+'/events', data, 'GET', function(e) {
 						if(e.success) {
 						
 							var events_result = JSON.parse(e.result);
 							
-							for (var i = 0; i < events_result.length; i++) {
+							for (var i = 0; i < events_result.data.length; i++) {
 								
+								// TODO: don't add suplicates!
+								
+								all_events.push(events_result.data[i]);
+								table_data_events.push({title: events_result.data[i].name});
 							}
 							
 							// all_events.concat(events_result.data).unique();
+							// all_events.push(events_result.data);
+
+							// eliminateDuplicates(all_events);  // FIXME: seems to not work
 							
-							all_events.push(events_result.data);
-							eliminateDuplicates(all_events);
-							
-							// Ti.API.log("collected_events: " + all_events.length);
-							
-							for (var i = 0; i < all_events.length; i++) {
-								table_data_events.push({title: all_events[i].name});
-								Ti.API.log(JSON.stringify(all_events));
-							}
+							// Ti.API.log("total number of events: " + all_events.length);
 							
 							tableView.setData(table_data_events);
 
@@ -150,16 +135,20 @@ exports.ApplicationWindow = function() {
 		'user_events',
 		'friends_events',
 	];
+	
+	// Ti.Facebook.logout();
+	
 	// Permissions your app needs
 	Titanium.Facebook.addEventListener('login', function(e) {
 		if(e.success) {
 			alert('Logged In');
 			loginView.hide();
 			populate_events();
-
+			
 			Titanium.Facebook.requestWithGraphPath('me', {}, 'GET', function(e) {
 				if(e.success) {
 					alert(e.result);
+					// alert('access_token = ', Titanium.Facebook.getAccessToken());
 				} else if(e.error) {
 					alert(e.error);
 				} else {

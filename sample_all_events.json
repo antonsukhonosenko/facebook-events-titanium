@@ -1,804 +1,548 @@
-[[
-		{
-			"id": "294327657291715",
-			"name": "ProfsoUX 2012",
-			"end_time": "2012-05-19T07:00:00",
-			"location": "Saint Petersburg, Saint Petersburg City, Russia",
-			"start_time": "2012-05-19T04:00:00",
-			"rsvp_status": "unsure"
-		}
-	],[],[],[
-		{
-			"id": "222381311111309",
-			"name": "Свічка пам'яті за Отаманом",
-			"end_time": "2012-05-25T23:30:00",
-			"location": "Всюди",
-			"start_time": "2012-05-25T14:30:00",
-			"rsvp_status": "attending"
-		}, {
-			"id": "203414939722752",
-			"name": "Марш-Ходотон \"Щасливі бути разом\"",
-			"end_time": "2012-04-15T14:00:00",
-			"location": "м.Львів",
-			"start_time": "2012-04-15T11:00:00",
-			"rsvp_status": "attending"
-		}, {
-			"id": "266472530088153",
-			"name": "Інтернет-ФБ-конференція відомого правозахисника Євгена Захарова",
-			"end_time": "2012-02-04T20:00:00",
-			"location": "http://www.facebook.com/groups/euinua/",
-			"start_time": "2012-02-04T17:00:00",
-			"rsvp_status": "attending"
-		}, {
-			"id": "301849316531444",
-			"name": "Інтернет-ФБ-конференція відомого правозахисника Євгена Захарова",
-			"end_time": "2012-02-04T18:00:00",
-			"location": "група \"Ми - європейці\" у ФБ http://www.facebook.com/groups/euinua/",
-			"start_time": "2012-02-04T17:00:00",
-			"rsvp_status": "attending"
-		}
-	],[],[],[
-		{
-			"id": "125454910906428",
-			"name": "600 років КОСМАЧА(11-12 липня)",
-			"end_time": "2012-07-12T06:30:00",
-			"location": "Космач, Косівський район івано-Франківська область.78640",
-			"start_time": "2012-07-12T03:30:00",
-			"rsvp_status": "attending"
-		}, {
-			"id": "303228409724831",
-			"name": "Вечір пам’яті Анатолія Лупиноса",
-			"end_time": "2012-02-06T21:30:00",
-			"location": "Будинок Спілки Письменників України",
-			"start_time": "2012-02-06T18:30:00",
-			"rsvp_status": "attending"
-		}
-	],[],[],[],[],[],[
-		{
-			"id": "347802418575018",
-			"name": "EAST AGAIN 3ème soirée",
-			"end_time": "2012-02-14T22:00:00",
-			"location": "EDHEC Business School",
-			"start_time": "2012-02-14T18:00:00",
-			"rsvp_status": "unsure"
-		}
-	],[],[],[],[],[
-		{
-			"id": "153943771375253",
-			"name": "Make it GREEN! Фотоконкурс к презентации альбома Нино Катамадзе в Киеве",
-			"end_time": "2012-04-03T22:00:00",
-			"location": "Дворец Украина",
-			"start_time": "2012-04-03T19:00:00",
-			"rsvp_status": "attending"
-		}, {
-			"id": "207365306019963",
-			"name": "port-royal (electronic, ambient, shoegaze / італія) + VJ",
-			"end_time": "2012-04-18T03:30:00",
-			"location": "Ukraine-Moldova-Poland",
-			"start_time": "2012-03-30T19:00:00",
-			"rsvp_status": "attending"
-		}, {
-			"id": "304690632912516",
-			"name": "16 марта: Леонид Фёдоров и Владимир Волков в Jazztere!!!",
-			"end_time": "2012-03-16T23:00:00",
-			"location": "Jazzter",
-			"start_time": "2012-03-16T20:00:00",
-			"rsvp_status": "attending"
-		}, {
-			"id": "107273686052257",
-			"name": "Opa! (RUS)",
-			"end_time": "2012-03-16T21:00:00",
-			"location": "Kulturforum",
-			"start_time": "2012-03-16T19:30:00",
-			"rsvp_status": "attending"
-		}, {
-			"id": "322131881156403",
-			"name": "Гала-концерт Yiddish Fest 2012 - ALL JEWISH STARS!",
-			"end_time": "2012-03-09T01:00:00",
-			"location": "Arena Moscow",
-			"start_time": "2012-03-08T21:00:00",
-			"rsvp_status": "attending"
-		}, {
-			"id": "340304875992337",
-			"name": "2 марта: Псой Короленко в Jazztere!!!",
-			"end_time": "2012-03-02T23:00:00",
-			"location": "Jazzter",
-			"start_time": "2012-03-02T20:00:00",
-			"rsvp_status": "attending"
-		}, {
-			"id": "312626165456218",
-			"name": "Раскардаш Оркестр в Москве!",
-			"end_time": "2012-02-20T23:00:00",
-			"location": "В клубе \"Гиперион\"",
-			"start_time": "2012-02-20T20:00:00",
-			"rsvp_status": "attending"
-		}, {
-			"id": "317817931603752",
-			"name": "Дні мови їдиш у Львові / Yiddish Days in Lviv",
-			"end_time": "2012-02-24T02:00:00",
-			"location": "Центр міської історії, Український Католицький Університет, Львівський Палац Мистецтв",
-			"start_time": "2012-02-20T11:00:00",
-			"rsvp_status": "attending"
-		}, {
-			"id": "120117271444339",
-			"name": "Раскардаш оркестр в Питере!",
-			"end_time": "2012-02-19T21:00:00",
-			"location": "Saint Petersburg, Saint Petersburg City, Russia",
-			"start_time": "2012-02-19T18:00:00",
-			"rsvp_status": "attending"
-		}, {
-			"id": "330487866974329",
-			"name": "BALKANBEATS LONDON - 3rd Anniversary -",
-			"end_time": "2012-02-19T05:00:00",
-			"location": "New Empowering Church - 1a WestGate St. E8 3RL",
-			"start_time": "2012-02-18T22:00:00",
-			"rsvp_status": "attending"
-		}, {
-			"id": "322630334444771",
-			"name": "КОНЦЕРТ \"ПИРАТА БЭНД\"",
-			"end_time": "2012-02-17T23:00:00",
-			"location": "ФЕСТИВАЛЬ-РЕСТОРАЦИЯ \"ДИВАН\"",
-			"start_time": "2012-02-17T20:00:00",
-			"rsvp_status": "unsure"
-		}, {
-			"id": "294627847260377",
-			"name": "BÜLBÜL MANUSH + CD RELEASE",
-			"end_time": "2012-02-15T00:00:00",
-			"location": "Kulturzentrum E-Werk",
-			"start_time": "2012-02-14T21:00:00",
-			"rsvp_status": "attending"
-		}, {
-			"id": "102932016497542",
-			"name": "MARINITA. Valentine's day",
-			"end_time": "2012-02-14T22:00:00",
-			"location": "НКЦ \"Indie\"",
-			"start_time": "2012-02-14T19:00:00",
-			"rsvp_status": "unsure"
-		}, {
-			"id": "124268207693536",
-			"name": "Женя Лопатник в проекте  \"L'Agle Noir\" - \"Черный орел\".",
-			"end_time": "2012-02-12T22:00:00",
-			"location": "В Культурном Центре \"Indie\"  (ул Чернышевсая 4/6)",
-			"start_time": "2012-02-12T19:00:00",
-			"rsvp_status": "attending"
-		}, {
-			"id": "206793952731316",
-			"name": "BALKANBEATS AT THE LIDO",
-			"end_time": "2012-02-12T06:00:00",
-			"location": "Lido Berlin",
-			"start_time": "2012-02-11T23:00:00",
-			"rsvp_status": "attending"
-		}, {
-			"id": "294919093896081",
-			"name": "Концерт",
-			"end_time": "2012-02-08T00:30:00",
-			"location": "проект ОГИ",
-			"start_time": "2012-02-07T22:00:00",
-			"rsvp_status": "attending"
-		}, {
-			"id": "373784362648197",
-			"name": "Відкриття виставки «Літературні дворики Харкова»",
-			"end_time": "2012-02-06T21:00:00",
-			"location": "Харків, вул. Фрунзе, 6 ",
-			"start_time": "2012-02-06T18:00:00",
-			"rsvp_status": "attending"
-		}, {
-			"id": "235108506569840",
-			"name": "Раскардаш Оркестр в кофейне «Friends»",
-			"end_time": "2012-02-03T22:30:00",
-			"location": "Friends Cafe",
-			"start_time": "2012-02-03T19:30:00",
-			"rsvp_status": "attending"
-		}
-	],[
-		{
-			"id": "378431705504710",
-			"name": "Вперше у Львові Псой Короленко запрошує друзів!",
-			"end_time": "2012-02-23T21:00:00",
-			"location": "Місце - pub Charles Bukowski",
-			"start_time": "2012-02-23T18:00:00",
-			"rsvp_status": "attending"
-		}, {
-			"id": "294518933943377",
-			"name": "Псой Короленко. «РЫБА ФИШ, БАБА ГАНУШ И ОМ ГАНЕШ» в «ЛОЖКЕ». РОСТОВ-НА-ДОНУ",
-			"end_time": "2012-02-19T22:00:00",
-			"location": "Арт-кафе «Ложка»",
-			"start_time": "2012-02-19T19:00:00",
-			"rsvp_status": "attending"
-		}, {
-			"id": "338949686127466",
-			"name": "ПСОЙ КОРОЛЕНКО. ВСТРЕЧА С ПЕСНЕЙ. КЛУБ \"ДУШ\", ПЕТЕРБУРГ",
-			"end_time": "2012-02-04T23:00:00",
-			"location": "Лиговский проспект, д. 50, корпус 6",
-			"start_time": "2012-02-04T20:00:00",
-			"rsvp_status": "attending"
-		}, {
-			"id": "361989820484209",
-			"name": "Киноперформанс Псоя Короленко (Москва) в Арсенале",
-			"end_time": "2012-02-02T22:00:00",
-			"location": "г. Нижний Новгород, Арсенал (Кремль, строение 6)",
-			"start_time": "2012-02-02T19:00:00",
-			"rsvp_status": "attending"
-		}
-	],[
-		{
-			"id": "327581807285180",
-			"name": "Міжнародний день діджея Тараса Шевченка. Концерт гурту QARPA",
-			"end_time": "2012-03-09T23:00:00",
-			"location": "Клуб Sullivan Room ",
-			"start_time": "2012-03-09T20:00:00",
-			"rsvp_status": "attending"
-		}, {
-			"id": "372368849457110",
-			"name": "Презентація книги \"Ми не є українофілами\"",
-			"end_time": "2012-02-23T19:00:00",
-			"location": "центр польських і європейських студій НаУКМА",
-			"start_time": "2012-02-23T17:00:00",
-			"rsvp_status": "attending"
-		}, {
-			"id": "359733327371276",
-			"name": "Позаеротичні читання, або Вечір принципово НЕеротичної поезії",
-			"end_time": "2012-02-10T20:30:00",
-			"location": "книгарня Є, Лисенка, 3",
-			"start_time": "2012-02-10T18:30:00",
-			"rsvp_status": "attending"
-		}, {
-			"id": "273257502739732",
-			"name": "Ірена Карпа: Як приборкати страх поразки і перемогти.",
-			"end_time": "2012-02-09T20:00:00",
-			"location": "Київ, Межигірська, 21, Смолоскип",
-			"start_time": "2012-02-09T19:00:00",
-			"rsvp_status": "attending"
-		}, {
-			"id": "338009349566106",
-			"name": "КУБИКМАГГИ в Киеве- Sullivan Room",
-			"end_time": "2012-02-03T23:00:00",
-			"location": "Sullivan Room Kiev",
-			"start_time": "2012-02-03T20:00:00",
-			"rsvp_status": "attending"
-		}
-	],[
-		{
-			"id": "227054354054880",
-			"name": "German Business Club (DWK) - Next Event- Polit Talk!",
-			"end_time": "2012-02-21T22:00:00",
-			"location": "Small Mariinsky Palace ",
-			"start_time": "2012-02-21T19:00:00",
-			"rsvp_status": "unsure"
-		}, {
-			"id": "335903129787449",
-			"name": "CAFÉ CRAWL SPECIAL: Discussion round on internationality in Frankfurt",
-			"end_time": "2012-02-19T18:00:00",
-			"location": "Interkulturelle Bühne",
-			"start_time": "2012-02-19T15:00:00",
-			"rsvp_status": "attending"
-		}, {
-			"id": "221755091244310",
-			"name": "11.02, 23:00 - Aurora-Party - Orange Peel (im grossen Raum), Frankfurt",
-			"end_time": "2012-02-12T05:00:00",
-			"location": "Orange Peel",
-			"start_time": "2012-02-11T23:00:00",
-			"rsvp_status": "unsure"
-		}
-	],[
-		{
-			"id": "170619409616065",
-			"name": "Camp 101",
-			"end_time": "2012-07-11T16:00:00",
-			"location": "Lough Key Forest Park, Roscommon, Ireland",
-			"start_time": "2012-07-04T10:00:00",
-			"rsvp_status": "unsure"
-		}, {
-			"id": "138204599610282",
-			"name": "IJF - Internacia Junulara Festivalo 2012",
-			"end_time": "2012-04-10T10:00:00",
-			"location": "Hotel Tania / Hotelo Tanjo",
-			"start_time": "2012-04-04T18:00:00",
-			"rsvp_status": "unsure"
-		}, {
-			"id": "283770414983272",
-			"name": "La norda lumo-renkontiĝo de NJE",
-			"end_time": "2012-02-26T18:00:00",
-			"location": "Kabano en Brensholmen, Tromsø",
-			"start_time": "2012-02-24T15:00:00",
-			"rsvp_status": "attending"
-		}, {
-			"id": "358006757545046",
-			"name": "Seven Points of Mind Training Practice Day with Lama Zangmo",
-			"end_time": "2012-02-19T16:00:00",
-			"location": "Kagyu Samye Dzong London - Spa Road",
-			"start_time": "2012-02-19T10:00:00",
-			"rsvp_status": "unsure"
-		}, {
-			"id": "301958776520675",
-			"name": "Bisexual Underground",
-			"end_time": "2012-02-14T23:00:00",
-			"location": "The Blue Post Pub",
-			"start_time": "2012-02-14T18:00:00",
-			"rsvp_status": "unsure"
-		}, {
-			"id": "237627842986388",
-			"name": "Learn Esperanto (6 Feb)",
-			"end_time": "2012-02-06T20:00:00",
-			"location": "Riverside Terrace Cafe",
-			"start_time": "2012-02-06T19:00:00",
-			"rsvp_status": "attending"
-		}
-	],[],[],[],[],[],[],[
-		{
-			"id": "173159426119762",
-			"name": "Результати опитування:Що думають українці про кафе і ресторани без куріння?",
-			"end_time": "2012-02-09T14:30:00",
-			"location": "Унiан",
-			"start_time": "2012-02-09T13:30:00",
-			"rsvp_status": "unsure"
-		}
-	],[
-		{
-			"id": "111851585603361",
-			"name": "UX Camp 2012",
-			"end_time": "2012-02-26T17:00:00",
-			"location": "Загородный комплекс «Джинтама-Бриз», Киев ",
-			"start_time": "2012-02-25T09:00:00",
-			"rsvp_status": "attending"
-		}
-	],[
-		{
-			"id": "179745992133702",
-			"name": "\"Psychology Club\" in English",
-			"end_time": "2012-02-05T16:00:00",
-			"location": "http://mapia.ua/en/features/restaurant-drova--909774?category=fastfood&city=kyiv&on_map=1",
-			"start_time": "2012-02-05T14:00:00",
-			"rsvp_status": "unsure"
-		}
-	],[],[
-		{
-			"id": "224114477608550",
-			"name": "Outsource'em [Аутсорсим]",
-			"end_time": "2012-06-23T01:30:00",
-			"location": "Bishkek",
-			"start_time": "2012-06-22T22:30:00",
-			"rsvp_status": "attending"
-		}, {
-			"id": "110156272337882",
-			"name": "Заклик до спільного святкування Воскресіння Христового 8 квітня 2012 року ",
-			"end_time": "2012-04-08T23:00:00",
-			"start_time": "2012-04-08T00:00:00",
-			"rsvp_status": "attending"
-		}, {
-			"id": "369961423031662",
-			"name": "Десяте засідання Polit Club у Києві",
-			"end_time": "2012-02-18T15:00:00",
-			"location": "Aroma Espresso Bar Мечникова",
-			"start_time": "2012-02-18T13:00:00",
-			"rsvp_status": "attending"
-		}, {
-			"id": "301849316531444",
-			"name": "Інтернет-ФБ-конференція відомого правозахисника Євгена Захарова",
-			"end_time": "2012-02-04T18:00:00",
-			"location": "група \"Ми - європейці\" у ФБ http://www.facebook.com/groups/euinua/",
-			"start_time": "2012-02-04T17:00:00",
-			"rsvp_status": "attending"
-		}
-	],[],[],[
-		{
-			"id": "153943771375253",
-			"name": "Make it GREEN! Фотоконкурс к презентации альбома Нино Катамадзе в Киеве",
-			"end_time": "2012-04-03T22:00:00",
-			"location": "Дворец Украина",
-			"start_time": "2012-04-03T19:00:00",
-			"rsvp_status": "attending"
-		}
-	],[],[],[],[],[
-		{
-			"id": "207365306019963",
-			"name": "port-royal (electronic, ambient, shoegaze / італія) + VJ",
-			"end_time": "2012-04-18T03:30:00",
-			"location": "Ukraine-Moldova-Poland",
-			"start_time": "2012-03-30T19:00:00",
-			"rsvp_status": "attending"
-		}, {
-			"id": "375757929116319",
-			"name": "ЧАРДИНІН 140: Віра Холодна. Ретроспектива фільмів Петра Чардиніна",
-			"end_time": "2012-02-23T22:00:00",
-			"location": "Кинотеатр Жовтень",
-			"start_time": "2012-02-23T19:00:00",
-			"rsvp_status": "attending"
-		}, {
-			"id": "386582818025103",
-			"name": "ФБ-конференція Анатолія Гриценка: Євроінтеграція, Росія, Вибори 2012",
-			"end_time": "2012-02-17T13:30:00",
-			"location": "група \"Ми - європейці\" у ФБ http://www.facebook.com/groups/euinua/",
-			"start_time": "2012-02-17T12:00:00",
-			"rsvp_status": "attending"
-		}, {
-			"id": "266472530088153",
-			"name": "Інтернет-ФБ-конференція відомого правозахисника Євгена Захарова",
-			"end_time": "2012-02-04T20:00:00",
-			"location": "http://www.facebook.com/groups/euinua/",
-			"start_time": "2012-02-04T17:00:00",
-			"rsvp_status": "attending"
-		}, {
-			"id": "301849316531444",
-			"name": "Інтернет-ФБ-конференція відомого правозахисника Євгена Захарова",
-			"end_time": "2012-02-04T18:00:00",
-			"location": "група \"Ми - європейці\" у ФБ http://www.facebook.com/groups/euinua/",
-			"start_time": "2012-02-04T17:00:00",
-			"rsvp_status": "attending"
-		}
-	],[
-		{
-			"id": "291335467564089",
-			"name": "64th World Newspaper Congress / 19th World Editors Forum",
-			"end_time": "2012-09-05T17:00:00",
-			"location": "Kiev, Ukraine",
-			"start_time": "2012-09-02T10:00:00",
-			"rsvp_status": "attending"
-		}
-	],[
-		{
-			"id": "111851585603361",
-			"name": "UX Camp 2012",
-			"end_time": "2012-02-26T17:00:00",
-			"location": "Загородный комплекс «Джинтама-Бриз», Киев ",
-			"start_time": "2012-02-25T09:00:00",
-			"rsvp_status": "attending"
-		}
-	],[],[
-		{
-			"id": "264817993589127",
-			"name": "Исследование \"Влияние сенсорной депривации на индивида\"",
-			"end_time": "2012-04-30T20:00:00",
-			"location": "Первый Флоат-Центр в Украине \"AQUASON\"",
-			"start_time": "2012-02-13T17:00:00",
-			"rsvp_status": "attending"
-		}
-	],[],[
-		{
-			"id": "223360157755183",
-			"name": "Presentation in English on Self Training",
-			"end_time": "2012-02-02T22:00:00",
-			"location": "вул. франка 16/4 (код на дверях 139)",
-			"start_time": "2012-02-02T19:00:00",
-			"rsvp_status": "unsure"
-		}
-	],[
-		{
-			"id": "205268786237447",
-			"name": "8 лет спустя :)",
-			"end_time": "2012-03-03T10:00:00",
-			"location": "Пролетарская пивная \"У станка\"",
-			"start_time": "2012-03-02T19:00:00",
-			"rsvp_status": "unsure"
-		}
-	],[
-		{
-			"id": "102978063161901",
-			"name": "Благотворительный вечер \"Поделись теплом души с четвероногим другом\"",
-			"end_time": "2012-03-14T23:00:00",
-			"location": "клуб Sullivan Room",
-			"start_time": "2012-03-14T19:00:00",
-			"rsvp_status": "attending"
-		}, {
-			"id": "297008047021294",
-			"name": "한글 학회 전남 지회 겨울 학술 발표",
-			"end_time": "2012-02-23T19:00:00",
-			"location": "조선대학교 (예정)",
-			"start_time": "2012-02-23T13:30:00",
-			"rsvp_status": "unsure"
-		}, {
-			"id": "339673249398195",
-			"name": "Lindsey and Jinny's 1 year Anniversary Flip Cup Tournament",
-			"end_time": "2012-02-19T14:00:00",
-			"location": "Moe's Bar, Mokpo",
-			"start_time": "2012-02-18T22:00:00",
-			"rsvp_status": "attending"
-		}, {
-			"id": "272525842812013",
-			"name": "One Last Night With Papa Mokpo",
-			"end_time": "2012-02-19T06:00:00",
-			"location": "The Mean Streets of Mokpo",
-			"start_time": "2012-02-18T20:00:00",
-			"rsvp_status": "attending"
-		}
-	],[
-		{
-			"id": "347272951970120",
-			"name": "Прямое включение в интернет-индустрию",
-			"end_time": "2012-02-18T16:00:00",
-			"location": "Digital October",
-			"start_time": "2012-02-18T13:00:00",
-			"rsvp_status": "attending"
-		}
-	],[],[],[
-		{
-			"id": "147724882013974",
-			"name": "\"Християнські цінності та політика\"",
-			"end_time": "2012-03-27T16:30:00",
-			"location": "Києво-Могилянська академія",
-			"start_time": "2012-03-27T13:30:00",
-			"rsvp_status": "attending"
-		}
-	],[],[],[],[],[
-		{
-			"id": "172720482828759",
-			"name": "DUBSTEP.LT presents OUTLOOK FESTIVAL LAUNCH PARTY",
-			"end_time": "2012-02-18T05:00:00",
-			"location": "LOFTAS",
-			"start_time": "2012-02-17T22:00:00",
-			"rsvp_status": "attending"
-		}, {
-			"id": "236213196462017",
-			"name": "\"West Coast\" party",
-			"end_time": "2012-02-04T06:00:00",
-			"location": "Kiwi Club",
-			"start_time": "2012-02-03T23:00:00",
-			"rsvp_status": "unsure"
-		}
-	],[],[],[
-		{
-			"id": "175699939144375",
-			"name": "EURO Cup 2012 & Klubben",
-			"end_time": "2012-07-01T23:30:00",
-			"location": "Poland - Ukraine, Warsaw - Kyiv",
-			"start_time": "2012-06-08T01:00:00",
-			"rsvp_status": "unsure"
-		}, {
-			"id": "207365306019963",
-			"name": "port-royal (electronic, ambient, shoegaze / італія) + VJ",
-			"end_time": "2012-04-18T03:30:00",
-			"location": "Ukraine-Moldova-Poland",
-			"start_time": "2012-03-30T19:00:00",
-			"rsvp_status": "attending"
-		}, {
-			"id": "130378063750368",
-			"name": "Her Name Is Calla (dark folk, post-rock, UK) + Singleton (acoustic, UA)",
-			"end_time": "2012-03-07T22:30:00",
-			"location": "Будинок Актора",
-			"start_time": "2012-03-07T19:00:00",
-			"rsvp_status": "attending"
-		}, {
-			"id": "335536066474092",
-			"name": "Хмелева project  спільний проект гуртів ДахаБраха/Port Mone",
-			"end_time": "2012-02-22T22:30:00",
-			"location": "Будинок Художника",
-			"start_time": "2012-02-22T19:30:00",
-			"rsvp_status": "unsure"
-		}, {
-			"id": "146244412101836",
-			"name": "интернет тренинг \"Лидер своей жизни\"",
-			"end_time": "2012-02-17T23:00:00",
-			"location": "интернет",
-			"start_time": "2012-02-17T20:00:00",
-			"rsvp_status": "unsure"
-		}, {
-			"id": "175990565836371",
-			"name": "Дводенний візуально-музичний перфоменс Lights Dim + Visionary Hours",
-			"end_time": "2012-02-12T21:00:00",
-			"location": "НЦТМ ім Л. Курбаса",
-			"start_time": "2012-02-11T18:30:00",
-			"rsvp_status": "attending"
-		}, {
-			"id": "231441000276691",
-			"name": "Перегляд фільму \"Чеський мир\" та зустріч із режисером Філіпом Ремундою",
-			"end_time": "2012-02-06T21:30:00",
-			"location": "Кіноклуб НаУКМА, вул. Набережно-Хрещатицька, 27 (9 корпус), кім.13",
-			"start_time": "2012-02-06T18:30:00",
-			"rsvp_status": "attending"
-		}
-	],[],[],[
-		{
-			"id": "343889595651875",
-			"name": "Тренінг  Від \"Я\" до \"МИ\".",
-			"end_time": "2012-04-28T15:00:00",
-			"start_time": "2012-04-28T11:00:00",
-			"rsvp_status": "unsure"
-		}, {
-			"id": "374492079231513",
-			"name": "Her Name Is Calla (dark folk, post-rock, UK) + la grosse tortue (UA)",
-			"end_time": "2012-03-08T22:00:00",
-			"location": "СТАРУШКА",
-			"start_time": "2012-03-08T19:00:00",
-			"rsvp_status": "unsure"
-		}, {
-			"id": "241023649318583",
-			"name": "ЕЛЕКТРИФІКАЦІЯ ПІДВАЛУ",
-			"end_time": "2012-03-06T22:30:00",
-			"start_time": "2012-03-06T18:30:00",
-			"rsvp_status": "attending"
-		}, {
-			"id": "210076715757769",
-			"name": "Виставка \"Японія.Традиція краси\"",
-			"end_time": "2012-03-06T19:00:00",
-			"location": "Львівська національна галерея мистецтв (Львівська картинна галерея)",
-			"start_time": "2012-03-06T16:00:00",
-			"rsvp_status": "unsure"
-		}, {
-			"id": "296495287079660",
-			"name": "тренінг КРОКИ ДО ВПЕВНЕНОСТІ",
-			"end_time": "2012-03-03T15:00:00",
-			"start_time": "2012-03-03T11:00:00",
-			"rsvp_status": "unsure"
-		}, {
-			"id": "101833983275984",
-			"name": "\"ДахаБраха|PortMone. Хмелева project\". Презентація нового альбому у Львові!",
-			"end_time": "2012-02-29T21:30:00",
-			"location": "Театр ім. Марії Заньковецької ",
-			"start_time": "2012-02-29T19:30:00",
-			"rsvp_status": "attending"
-		}, {
-			"id": "180246835403763",
-			"name": "Олег Меньшиков з виставою \"1900\" у Львівській опері",
-			"end_time": "2012-02-27T22:00:00",
-			"location": "Львівська опера",
-			"start_time": "2012-02-27T19:00:00",
-			"rsvp_status": "unsure"
-		}, {
-			"id": "345367455497043",
-			"name": "Zapaska у пабі \"Лінивий Пес \"",
-			"end_time": "2012-02-26T23:00:00",
-			"location": "Паб \"Лінивий Пес\"",
-			"start_time": "2012-02-26T20:00:00",
-			"rsvp_status": "attending"
-		}, {
-			"id": "272296926169253",
-			"name": "Nameless - 20 років розмаїття",
-			"end_time": "2012-02-25T23:30:00",
-			"location": "Коза бар",
-			"start_time": "2012-02-25T20:30:00",
-			"rsvp_status": "unsure"
-		}, {
-			"id": "332553370101350",
-			"name": "Друга грань Кубика Рубіка",
-			"end_time": "2012-02-24T21:30:00",
-			"location": "інформацію подамо згодом",
-			"start_time": "2012-02-24T18:30:00",
-			"rsvp_status": "unsure"
-		}, {
-			"id": "378431705504710",
-			"name": "Вперше у Львові Псой Короленко запрошує друзів!",
-			"end_time": "2012-02-23T21:00:00",
-			"location": "Місце - pub Charles Bukowski",
-			"start_time": "2012-02-23T18:00:00",
-			"rsvp_status": "attending"
-		}, {
-			"id": "283698731696706",
-			"name": "Проект «ЛАВОЧКИ» фотографія",
-			"end_time": "2012-03-08T21:00:00",
-			"location": "Галерея «Дзиґа»,  вул. Вірменська, 35, Львів.",
-			"start_time": "2012-02-23T17:00:00",
-			"rsvp_status": "attending"
-		}, {
-			"id": "335536066474092",
-			"name": "Хмелева project  спільний проект гуртів ДахаБраха/Port Mone",
-			"end_time": "2012-02-22T22:30:00",
-			"location": "Будинок Художника",
-			"start_time": "2012-02-22T19:30:00",
-			"rsvp_status": "unsure"
-		}, {
-			"id": "299285553464961",
-			"name": "Театральній вікенд тиждень 3",
-			"end_time": "2012-02-19T18:00:00",
-			"location": "Перший академічний театр для дітей та юнацтва",
-			"start_time": "2012-02-17T19:00:00",
-			"rsvp_status": "unsure"
-		}, {
-			"id": "229737670454135",
-			"name": "ONLY YOU",
-			"end_time": "2012-03-11T11:00:00",
-			"location": "Мистецька Галерея Гері Боумена. Львів, Наливайка, 18",
-			"start_time": "2012-02-17T18:00:00",
-			"rsvp_status": "attending"
-		}, {
-			"id": "359026457448804",
-			"name": "Благодійна художня виставка  «Мистецтво заради життя»",
-			"end_time": "2012-02-29T16:00:00",
-			"location": "ТВК „Південний” у культурно-мистецькому центрі \"Львів\"",
-			"start_time": "2012-02-16T16:00:00",
-			"rsvp_status": "unsure"
-		}, {
-			"id": "284474468287063",
-			"name": "Концерт«Панке Шава» VS. «КораЛЛі»",
-			"end_time": "2012-02-15T23:00:00",
-			"location": "Хмільний дім Роберта Домса (ХДРД)",
-			"start_time": "2012-02-15T20:00:00",
-			"rsvp_status": "unsure"
-		}, {
-			"id": "377209252292626",
-			"name": "Лекція \"Польська авангардна архітектура – Львів 1934 vs Ополе 2004\"",
-			"end_time": "2012-02-15T21:30:00",
-			"location": "вул. Богомольця, 6",
-			"start_time": "2012-02-15T18:30:00",
-			"rsvp_status": "attending"
-		}, {
-			"id": "304421172949477",
-			"name": "Valentine`s Day in Music Lab",
-			"end_time": "2012-02-15T00:00:00",
-			"location": "MusicLab  Club Café",
-			"start_time": "2012-02-14T21:00:00",
-			"rsvp_status": "unsure"
-		}, {
-			"id": "208934669205319",
-			"name": "У Етноклубі - Запусти з «Людьми Добрими»",
-			"end_time": "2012-02-14T23:00:00",
-			"location": "арт-кав'ярня «Квартира 35» ",
-			"start_time": "2012-02-14T20:00:00",
-			"rsvp_status": "attending"
-		}, {
-			"id": "312017795512904",
-			"name": "Перегляд і дискусія фільму \"Вогнестійкий\"",
-			"end_time": "2012-02-13T22:30:00",
-			"location": "  м. Львів, вул. І. Франка, 16. код - 139; 2 поверх, вхід по балкону",
-			"start_time": "2012-02-13T19:00:00",
-			"rsvp_status": "unsure"
-		}, {
-			"id": "149159985201094",
-			"name": "Екзистенціалізм для народу. Відкрита лекція Андрія Дахнія",
-			"end_time": "2012-02-13T21:30:00",
-			"location": "ауд. 100",
-			"start_time": "2012-02-13T18:30:00",
-			"rsvp_status": "unsure"
-		}, {
-			"id": "379403348752781",
-			"name": "THANK GOD IT'S FRIDAY!",
-			"end_time": "2012-02-11T02:00:00",
-			"location": "Сало",
-			"start_time": "2012-02-10T21:00:00",
-			"rsvp_status": "unsure"
-		}, {
-			"id": "223775617713238",
-			"name": "Концерт Квартету Бандуристок",
-			"end_time": "2012-02-10T21:00:00",
-			"location": "Львів, вул. Коперніка, 40а ",
-			"start_time": "2012-02-10T19:00:00",
-			"rsvp_status": "unsure"
-		}, {
-			"id": "237209006364254",
-			"name": "\"Проповідь це політагітація, демагогія, лекція…  чи Боже слово?\"",
-			"end_time": "2012-02-10T21:00:00",
-			"location": "вул. Пекарська ,13 ЛМГО \"Українська молодь - Христові\" МОЛОДІЖНИЙ ХРИСТИЯНСЬКИЙ ЦЕНТР (вхід в кінці подвір'я)",
-			"start_time": "2012-02-10T18:00:00",
-			"rsvp_status": "unsure"
-		}
-	],[
-		{
-			"id": "324238567619712",
-			"name": "Мандри з дітьми",
-			"end_time": "2012-02-07T14:00:00",
-			"location": "Київ",
-			"start_time": "2012-02-07T11:00:00",
-			"rsvp_status": "attending"
-		}
-	],[],[],[],[
-		{
-			"id": "290965097628112",
-			"name": "The Eye is a Lonely Hunter – Images of Humankind, Fotofestival Mannheim",
-			"end_time": "2012-04-01T19:00:00",
-			"location": "Grimmuseum",
-			"start_time": "2012-02-11T19:00:00",
-			"rsvp_status": "attending"
-		}, {
-			"id": "367212549958950",
-			"name": "State of the World Week 2012: CENSORSHIP",
-			"end_time": "2012-02-10T19:00:00",
-			"location": "ECLA",
-			"start_time": "2012-02-06T09:30:00",
-			"rsvp_status": "attending"
-		}
-	],[],[
-		{
-			"id": "209752269122517",
-			"name": "Літературні читання з Дарою Корній та Русланом Найдою",
-			"end_time": "2012-02-18T21:00:00",
-			"start_time": "2012-02-18T19:00:00",
-			"rsvp_status": "unsure"
-		}, {
-			"id": "165500476897139",
-			"name": "Експертний семінар із захисту персональних даних",
-			"end_time": "2012-02-15T13:00:00",
-			"location": "Великий конференц-зал Президії Національної академії наук України, 2-ий поверх ",
-			"start_time": "2012-02-15T10:00:00",
-			"rsvp_status": "unsure"
-		}
-	],[]
+[
+	{
+		"id": "294327657291715",
+		"name": "ProfsoUX 2012",
+		"end_time": "2012-05-19T07:00:00",
+		"location": "Saint Petersburg, Saint Petersburg City, Russia",
+		"start_time": "2012-05-19T04:00:00",
+		"rsvp_status": "unsure"
+	}, {
+		"id": "188724704564895",
+		"name": "Творчо-музично-містичне дійство від гурту «Йорий Клоц» в  «Культ Ра»",
+		"end_time": "2012-02-19T22:00:00",
+		"location": "Руський Клуб \"Культ Ра\"",
+		"start_time": "2012-02-19T19:00:00",
+		"rsvp_status": "attending"
+	}, {
+		"id": "125454910906428",
+		"name": "600 років КОСМАЧА(11-12 липня)",
+		"end_time": "2012-07-12T06:30:00",
+		"location": "Космач, Косівський район івано-Франківська область.78640",
+		"start_time": "2012-07-12T03:30:00",
+		"rsvp_status": "attending"
+	}, {
+		"id": "303228409724831",
+		"name": "Вечір пам’яті Анатолія Лупиноса",
+		"end_time": "2012-02-06T21:30:00",
+		"location": "Будинок Спілки Письменників України",
+		"start_time": "2012-02-06T18:30:00",
+		"rsvp_status": "attending"
+	}, {
+		"id": "222381311111309",
+		"name": "Свічка пам'яті за Отаманом",
+		"end_time": "2012-05-25T23:30:00",
+		"location": "Всюди",
+		"start_time": "2012-05-25T14:30:00",
+		"rsvp_status": "attending"
+	}, {
+		"id": "203414939722752",
+		"name": "Марш-Ходотон \"Щасливі бути разом\"",
+		"end_time": "2012-04-15T14:00:00",
+		"location": "м.Львів",
+		"start_time": "2012-04-15T11:00:00",
+		"rsvp_status": "attending"
+	}, {
+		"id": "266472530088153",
+		"name": "Інтернет-ФБ-конференція відомого правозахисника Євгена Захарова",
+		"end_time": "2012-02-04T20:00:00",
+		"location": "http://www.facebook.com/groups/euinua/",
+		"start_time": "2012-02-04T17:00:00",
+		"rsvp_status": "attending"
+	}, {
+		"id": "301849316531444",
+		"name": "Інтернет-ФБ-конференція відомого правозахисника Євгена Захарова",
+		"end_time": "2012-02-04T18:00:00",
+		"location": "група \"Ми - європейці\" у ФБ http://www.facebook.com/groups/euinua/",
+		"start_time": "2012-02-04T17:00:00",
+		"rsvp_status": "attending"
+	}, {
+		"id": "347802418575018",
+		"name": "EAST AGAIN 3ème soirée",
+		"end_time": "2012-02-14T22:00:00",
+		"location": "EDHEC Business School",
+		"start_time": "2012-02-14T18:00:00",
+		"rsvp_status": "unsure"
+	}, {
+		"id": "272468012826636",
+		"name": "ЧЕСНО вирушає до Харкова",
+		"end_time": "2012-02-17T17:00:00",
+		"location": "Фонд Громадські Ініціативи Арсена Авакова",
+		"start_time": "2012-02-17T11:00:00",
+		"rsvp_status": "attending"
+	}, {
+		"id": "153943771375253",
+		"name": "Make it GREEN! Фотоконкурс к презентации альбома Нино Катамадзе в Киеве",
+		"end_time": "2012-04-03T22:00:00",
+		"location": "Дворец Украина",
+		"start_time": "2012-04-03T19:00:00",
+		"rsvp_status": "attending"
+	}, {
+		"id": "207365306019963",
+		"name": "port-royal (electronic, ambient, shoegaze / італія) + VJ",
+		"end_time": "2012-04-18T03:30:00",
+		"location": "Ukraine-Moldova-Poland",
+		"start_time": "2012-03-30T19:00:00",
+		"rsvp_status": "attending"
+	}, {
+		"id": "304690632912516",
+		"name": "16 марта: Леонид Фёдоров и Владимир Волков в Jazztere!!!",
+		"end_time": "2012-03-16T23:00:00",
+		"location": "Jazzter",
+		"start_time": "2012-03-16T20:00:00",
+		"rsvp_status": "attending"
+	}, {
+		"id": "107273686052257",
+		"name": "Opa! (RUS)",
+		"end_time": "2012-03-16T21:00:00",
+		"location": "Kulturforum",
+		"start_time": "2012-03-16T19:30:00",
+		"rsvp_status": "attending"
+	}, {
+		"id": "322131881156403",
+		"name": "Гала-концерт Yiddish Fest 2012 - ALL JEWISH STARS!",
+		"end_time": "2012-03-09T01:00:00",
+		"location": "Arena Moscow",
+		"start_time": "2012-03-08T21:00:00",
+		"rsvp_status": "attending"
+	}, {
+		"id": "340304875992337",
+		"name": "2 марта: Псой Короленко в Jazztere!!!",
+		"end_time": "2012-03-02T23:00:00",
+		"location": "Jazzter",
+		"start_time": "2012-03-02T20:00:00",
+		"rsvp_status": "attending"
+	}, {
+		"id": "312626165456218",
+		"name": "Раскардаш Оркестр в Москве!",
+		"end_time": "2012-02-20T23:00:00",
+		"location": "В клубе \"Гиперион\"",
+		"start_time": "2012-02-20T20:00:00",
+		"rsvp_status": "attending"
+	}, {
+		"id": "317817931603752",
+		"name": "Дні мови їдиш у Львові / Yiddish Days in Lviv",
+		"end_time": "2012-02-24T02:00:00",
+		"location": "Центр міської історії, Український Католицький Університет, Львівський Палац Мистецтв",
+		"start_time": "2012-02-20T11:00:00",
+		"rsvp_status": "attending"
+	}, {
+		"id": "120117271444339",
+		"name": "Раскардаш оркестр в Питере!",
+		"end_time": "2012-02-19T21:00:00",
+		"location": "Saint Petersburg, Saint Petersburg City, Russia",
+		"start_time": "2012-02-19T18:00:00",
+		"rsvp_status": "attending"
+	}, {
+		"id": "330487866974329",
+		"name": "BALKANBEATS LONDON - 3rd Anniversary -",
+		"end_time": "2012-02-19T05:00:00",
+		"location": "New Empowering Church - 1a WestGate St. E8 3RL",
+		"start_time": "2012-02-18T22:00:00",
+		"rsvp_status": "attending"
+	}, {
+		"id": "322630334444771",
+		"name": "КОНЦЕРТ \"ПИРАТА БЭНД\"",
+		"end_time": "2012-02-17T23:00:00",
+		"location": "ФЕСТИВАЛЬ-РЕСТОРАЦИЯ \"ДИВАН\"",
+		"start_time": "2012-02-17T20:00:00",
+		"rsvp_status": "unsure"
+	}, {
+		"id": "294627847260377",
+		"name": "BÜLBÜL MANUSH + CD RELEASE",
+		"end_time": "2012-02-15T00:00:00",
+		"location": "Kulturzentrum E-Werk",
+		"start_time": "2012-02-14T21:00:00",
+		"rsvp_status": "attending"
+	}, {
+		"id": "102932016497542",
+		"name": "MARINITA. Valentine's day",
+		"end_time": "2012-02-14T22:00:00",
+		"location": "НКЦ \"Indie\"",
+		"start_time": "2012-02-14T19:00:00",
+		"rsvp_status": "unsure"
+	}, {
+		"id": "124268207693536",
+		"name": "Женя Лопатник в проекте  \"L'Agle Noir\" - \"Черный орел\".",
+		"end_time": "2012-02-12T22:00:00",
+		"location": "В Культурном Центре \"Indie\"  (ул Чернышевсая 4/6)",
+		"start_time": "2012-02-12T19:00:00",
+		"rsvp_status": "attending"
+	}, {
+		"id": "206793952731316",
+		"name": "BALKANBEATS AT THE LIDO",
+		"end_time": "2012-02-12T06:00:00",
+		"location": "Lido Berlin",
+		"start_time": "2012-02-11T23:00:00",
+		"rsvp_status": "attending"
+	}, {
+		"id": "294919093896081",
+		"name": "Концерт",
+		"end_time": "2012-02-08T00:30:00",
+		"location": "проект ОГИ",
+		"start_time": "2012-02-07T22:00:00",
+		"rsvp_status": "attending"
+	}, {
+		"id": "373784362648197",
+		"name": "Відкриття виставки «Літературні дворики Харкова»",
+		"end_time": "2012-02-06T21:00:00",
+		"location": "Харків, вул. Фрунзе, 6 ",
+		"start_time": "2012-02-06T18:00:00",
+		"rsvp_status": "attending"
+	}, {
+		"id": "235108506569840",
+		"name": "Раскардаш Оркестр в кофейне «Friends»",
+		"end_time": "2012-02-03T22:30:00",
+		"location": "Friends Cafe",
+		"start_time": "2012-02-03T19:30:00",
+		"rsvp_status": "attending"
+	}, {
+		"id": "227054354054880",
+		"name": "German Business Club (DWK) - Next Event- Polit Talk!",
+		"end_time": "2012-02-21T22:00:00",
+		"location": "Small Mariinsky Palace ",
+		"start_time": "2012-02-21T19:00:00",
+		"rsvp_status": "unsure"
+	}, {
+		"id": "335903129787449",
+		"name": "CAFÉ CRAWL SPECIAL: Discussion round on internationality in Frankfurt",
+		"end_time": "2012-02-19T18:00:00",
+		"location": "Interkulturelle Bühne",
+		"start_time": "2012-02-19T15:00:00",
+		"rsvp_status": "attending"
+	}, {
+		"id": "221755091244310",
+		"name": "11.02, 23:00 - Aurora-Party - Orange Peel (im grossen Raum), Frankfurt",
+		"end_time": "2012-02-12T05:00:00",
+		"location": "Orange Peel",
+		"start_time": "2012-02-11T23:00:00",
+		"rsvp_status": "unsure"
+	}, {
+		"id": "170619409616065",
+		"name": "Camp 101",
+		"end_time": "2012-07-11T16:00:00",
+		"location": "Lough Key Forest Park, Roscommon, Ireland",
+		"start_time": "2012-07-04T10:00:00",
+		"rsvp_status": "unsure"
+	}, {
+		"id": "138204599610282",
+		"name": "IJF - Internacia Junulara Festivalo 2012",
+		"end_time": "2012-04-10T10:00:00",
+		"location": "Hotel Tania / Hotelo Tanjo",
+		"start_time": "2012-04-04T18:00:00",
+		"rsvp_status": "unsure"
+	}, {
+		"id": "283770414983272",
+		"name": "La norda lumo-renkontiĝo de NJE",
+		"end_time": "2012-02-26T18:00:00",
+		"location": "Kabano en Brensholmen, Tromsø",
+		"start_time": "2012-02-24T15:00:00",
+		"rsvp_status": "attending"
+	}, {
+		"id": "358006757545046",
+		"name": "Seven Points of Mind Training Practice Day with Lama Zangmo",
+		"end_time": "2012-02-19T16:00:00",
+		"location": "Kagyu Samye Dzong London - Spa Road",
+		"start_time": "2012-02-19T10:00:00",
+		"rsvp_status": "unsure"
+	}, {
+		"id": "301958776520675",
+		"name": "Bisexual Underground",
+		"end_time": "2012-02-14T23:00:00",
+		"location": "The Blue Post Pub",
+		"start_time": "2012-02-14T18:00:00",
+		"rsvp_status": "unsure"
+	}, {
+		"id": "237627842986388",
+		"name": "Learn Esperanto (6 Feb)",
+		"end_time": "2012-02-06T20:00:00",
+		"location": "Riverside Terrace Cafe",
+		"start_time": "2012-02-06T19:00:00",
+		"rsvp_status": "attending"
+	}, {
+		"id": "378431705504710",
+		"name": "Вперше у Львові Псой Короленко запрошує друзів!",
+		"end_time": "2012-02-23T21:00:00",
+		"location": "Місце - pub Charles Bukowski",
+		"start_time": "2012-02-23T18:00:00",
+		"rsvp_status": "attending"
+	}, {
+		"id": "294518933943377",
+		"name": "Псой Короленко. «РЫБА ФИШ, БАБА ГАНУШ И ОМ ГАНЕШ» в «ЛОЖКЕ». РОСТОВ-НА-ДОНУ",
+		"end_time": "2012-02-19T22:00:00",
+		"location": "Арт-кафе «Ложка»",
+		"start_time": "2012-02-19T19:00:00",
+		"rsvp_status": "attending"
+	}, {
+		"id": "338949686127466",
+		"name": "ПСОЙ КОРОЛЕНКО. ВСТРЕЧА С ПЕСНЕЙ. КЛУБ \"ДУШ\", ПЕТЕРБУРГ",
+		"end_time": "2012-02-04T23:00:00",
+		"location": "Лиговский проспект, д. 50, корпус 6",
+		"start_time": "2012-02-04T20:00:00",
+		"rsvp_status": "attending"
+	}, {
+		"id": "327581807285180",
+		"name": "Міжнародний день діджея Тараса Шевченка. Концерт гурту QARPA",
+		"end_time": "2012-03-09T23:00:00",
+		"location": "Клуб Sullivan Room ",
+		"start_time": "2012-03-09T20:00:00",
+		"rsvp_status": "attending"
+	}, {
+		"id": "372368849457110",
+		"name": "Презентація книги \"Ми не є українофілами\"",
+		"end_time": "2012-02-23T19:00:00",
+		"location": "центр польських і європейських студій НаУКМА",
+		"start_time": "2012-02-23T17:00:00",
+		"rsvp_status": "attending"
+	}, {
+		"id": "359733327371276",
+		"name": "Позаеротичні читання, або Вечір принципово НЕеротичної поезії",
+		"end_time": "2012-02-10T20:30:00",
+		"location": "книгарня Є, Лисенка, 3",
+		"start_time": "2012-02-10T18:30:00",
+		"rsvp_status": "attending"
+	}, {
+		"id": "273257502739732",
+		"name": "Ірена Карпа: Як приборкати страх поразки і перемогти.",
+		"end_time": "2012-02-09T20:00:00",
+		"location": "Київ, Межигірська, 21, Смолоскип",
+		"start_time": "2012-02-09T19:00:00",
+		"rsvp_status": "attending"
+	}, {
+		"id": "338009349566106",
+		"name": "КУБИКМАГГИ в Киеве- Sullivan Room",
+		"end_time": "2012-02-03T23:00:00",
+		"location": "Sullivan Room Kiev",
+		"start_time": "2012-02-03T20:00:00",
+		"rsvp_status": "attending"
+	}, {
+		"id": "153984134720491",
+		"name": "Подаруй дітям Межигір’я.",
+		"end_time": "2012-02-17T20:00:00",
+		"location": "http://forum.uvo.cv.ua/index.php/topic,703.0.html",
+		"start_time": "2012-02-16T14:30:00",
+		"rsvp_status": "attending"
+	}, {
+		"id": "179745992133702",
+		"name": "\"Psychology Club\" in English",
+		"end_time": "2012-02-05T16:00:00",
+		"location": "http://mapia.ua/en/features/restaurant-drova--909774?category=fastfood&city=kyiv&on_map=1",
+		"start_time": "2012-02-05T14:00:00",
+		"rsvp_status": "unsure"
+	}, {
+		"id": "111851585603361",
+		"name": "UX Camp 2012",
+		"end_time": "2012-02-26T17:00:00",
+		"location": "Загородный комплекс «Джинтама-Бриз», Киев ",
+		"start_time": "2012-02-25T09:00:00",
+		"rsvp_status": "attending"
+	}, {
+		"id": "173159426119762",
+		"name": "Результати опитування:Що думають українці про кафе і ресторани без куріння?",
+		"end_time": "2012-02-09T14:30:00",
+		"location": "Унiан",
+		"start_time": "2012-02-09T13:30:00",
+		"rsvp_status": "unsure"
+	}, {
+		"id": "224114477608550",
+		"name": "Outsource'em [Аутсорсим]",
+		"end_time": "2012-06-23T01:30:00",
+		"location": "Bishkek",
+		"start_time": "2012-06-22T22:30:00",
+		"rsvp_status": "attending"
+	}, {
+		"id": "110156272337882",
+		"name": "Заклик до спільного святкування Воскресіння Христового 8 квітня 2012 року ",
+		"end_time": "2012-04-08T23:00:00",
+		"start_time": "2012-04-08T00:00:00",
+		"rsvp_status": "attending"
+	}, {
+		"id": "369961423031662",
+		"name": "Десяте засідання Polit Club у Києві",
+		"end_time": "2012-02-18T15:00:00",
+		"location": "Aroma Espresso Bar Мечникова",
+		"start_time": "2012-02-18T13:00:00",
+		"rsvp_status": "attending"
+	}, {
+		"id": "301849316531444",
+		"name": "Інтернет-ФБ-конференція відомого правозахисника Євгена Захарова",
+		"end_time": "2012-02-04T18:00:00",
+		"location": "група \"Ми - європейці\" у ФБ http://www.facebook.com/groups/euinua/",
+		"start_time": "2012-02-04T17:00:00",
+		"rsvp_status": "attending"
+	}, {
+		"id": "153943771375253",
+		"name": "Make it GREEN! Фотоконкурс к презентации альбома Нино Катамадзе в Киеве",
+		"end_time": "2012-04-03T22:00:00",
+		"location": "Дворец Украина",
+		"start_time": "2012-04-03T19:00:00",
+		"rsvp_status": "attending"
+	}, {
+		"id": "102978063161901",
+		"name": "Благотворительный вечер \"Поделись теплом души с четвероногим другом\"",
+		"end_time": "2012-03-14T23:00:00",
+		"location": "клуб Sullivan Room",
+		"start_time": "2012-03-14T19:00:00",
+		"rsvp_status": "attending"
+	}, {
+		"id": "297008047021294",
+		"name": "한글 학회 전남 지회 겨울 학술 발표",
+		"end_time": "2012-02-23T19:00:00",
+		"location": "조선대학교 (예정)",
+		"start_time": "2012-02-23T13:30:00",
+		"rsvp_status": "unsure"
+	}, {
+		"id": "339673249398195",
+		"name": "Lindsey and Jinny's 1 year Anniversary Flip Cup Tournament",
+		"end_time": "2012-02-19T14:00:00",
+		"location": "Moe's Bar, Mokpo",
+		"start_time": "2012-02-18T22:00:00",
+		"rsvp_status": "attending"
+	}, {
+		"id": "272525842812013",
+		"name": "One Last Night With Papa Mokpo",
+		"end_time": "2012-02-19T06:00:00",
+		"location": "The Mean Streets of Mokpo",
+		"start_time": "2012-02-18T20:00:00",
+		"rsvp_status": "attending"
+	}, {
+		"id": "111851585603361",
+		"name": "UX Camp 2012",
+		"end_time": "2012-02-26T17:00:00",
+		"location": "Загородный комплекс «Джинтама-Бриз», Киев ",
+		"start_time": "2012-02-25T09:00:00",
+		"rsvp_status": "attending"
+	}, {
+		"id": "207365306019963",
+		"name": "port-royal (electronic, ambient, shoegaze / італія) + VJ",
+		"end_time": "2012-04-18T03:30:00",
+		"location": "Ukraine-Moldova-Poland",
+		"start_time": "2012-03-30T19:00:00",
+		"rsvp_status": "attending"
+	}, {
+		"id": "375757929116319",
+		"name": "ЧАРДИНІН 140: Віра Холодна. Ретроспектива фільмів Петра Чардиніна",
+		"end_time": "2012-02-23T22:00:00",
+		"location": "Кинотеатр Жовтень",
+		"start_time": "2012-02-23T19:00:00",
+		"rsvp_status": "attending"
+	}, {
+		"id": "386582818025103",
+		"name": "ФБ-конференція Анатолія Гриценка: Євроінтеграція, Росія, Вибори 2012",
+		"end_time": "2012-02-17T13:30:00",
+		"location": "група \"Ми - європейці\" у ФБ http://www.facebook.com/groups/euinua/",
+		"start_time": "2012-02-17T12:00:00",
+		"rsvp_status": "attending"
+	}, {
+		"id": "266472530088153",
+		"name": "Інтернет-ФБ-конференція відомого правозахисника Євгена Захарова",
+		"end_time": "2012-02-04T20:00:00",
+		"location": "http://www.facebook.com/groups/euinua/",
+		"start_time": "2012-02-04T17:00:00",
+		"rsvp_status": "attending"
+	}, {
+		"id": "301849316531444",
+		"name": "Інтернет-ФБ-конференція відомого правозахисника Євгена Захарова",
+		"end_time": "2012-02-04T18:00:00",
+		"location": "група \"Ми - європейці\" у ФБ http://www.facebook.com/groups/euinua/",
+		"start_time": "2012-02-04T17:00:00",
+		"rsvp_status": "attending"
+	}, {
+		"id": "291335467564089",
+		"name": "64th World Newspaper Congress / 19th World Editors Forum",
+		"end_time": "2012-09-05T17:00:00",
+		"location": "Kiev, Ukraine",
+		"start_time": "2012-09-02T10:00:00",
+		"rsvp_status": "attending"
+	}, {
+		"id": "205268786237447",
+		"name": "8 лет спустя :)",
+		"end_time": "2012-03-03T10:00:00",
+		"location": "Пролетарская пивная \"У станка\"",
+		"start_time": "2012-03-02T19:00:00",
+		"rsvp_status": "unsure"
+	}, {
+		"id": "264817993589127",
+		"name": "Исследование \"Влияние сенсорной депривации на индивида\"",
+		"end_time": "2012-04-30T20:00:00",
+		"location": "Первый Флоат-Центр в Украине \"AQUASON\"",
+		"start_time": "2012-02-13T17:00:00",
+		"rsvp_status": "attending"
+	}, {
+		"id": "147724882013974",
+		"name": "\"Християнські цінності та політика\"",
+		"end_time": "2012-03-27T16:30:00",
+		"location": "Києво-Могилянська академія",
+		"start_time": "2012-03-27T13:30:00",
+		"rsvp_status": "attending"
+	}, {
+		"id": "347272951970120",
+		"name": "Прямое включение в интернет-индустрию",
+		"end_time": "2012-02-18T16:00:00",
+		"location": "Digital October",
+		"start_time": "2012-02-18T13:00:00",
+		"rsvp_status": "attending"
+	}, {
+		"id": "175699939144375",
+		"name": "EURO Cup 2012 & Klubben",
+		"end_time": "2012-07-01T23:30:00",
+		"location": "Poland - Ukraine, Warsaw - Kyiv",
+		"start_time": "2012-06-08T01:00:00",
+		"rsvp_status": "unsure"
+	}, {
+		"id": "207365306019963",
+		"name": "port-royal (electronic, ambient, shoegaze / італія) + VJ",
+		"end_time": "2012-04-18T03:30:00",
+		"location": "Ukraine-Moldova-Poland",
+		"start_time": "2012-03-30T19:00:00",
+		"rsvp_status": "attending"
+	}, {
+		"id": "130378063750368",
+		"name": "Her Name Is Calla (dark folk, post-rock, UK) + Singleton (acoustic, UA)",
+		"end_time": "2012-03-07T22:30:00",
+		"location": "Будинок Актора",
+		"start_time": "2012-03-07T19:00:00",
+		"rsvp_status": "attending"
+	}, {
+		"id": "335536066474092",
+		"name": "Хмелева project  спільний проект гуртів ДахаБраха/Port Mone",
+		"end_time": "2012-02-22T22:30:00",
+		"location": "Будинок Художника",
+		"start_time": "2012-02-22T19:30:00",
+		"rsvp_status": "unsure"
+	}, {
+		"id": "146244412101836",
+		"name": "интернет тренинг \"Лидер своей жизни\"",
+		"end_time": "2012-02-17T23:00:00",
+		"location": "интернет",
+		"start_time": "2012-02-17T20:00:00",
+		"rsvp_status": "unsure"
+	}, {
+		"id": "175990565836371",
+		"name": "Дводенний візуально-музичний перфоменс Lights Dim + Visionary Hours",
+		"end_time": "2012-02-12T21:00:00",
+		"location": "НЦТМ ім Л. Курбаса",
+		"start_time": "2012-02-11T18:30:00",
+		"rsvp_status": "attending"
+	}, {
+		"id": "231441000276691",
+		"name": "Перегляд фільму \"Чеський мир\" та зустріч із режисером Філіпом Ремундою",
+		"end_time": "2012-02-06T21:30:00",
+		"location": "Кіноклуб НаУКМА, вул. Набережно-Хрещатицька, 27 (9 корпус), кім.13",
+		"start_time": "2012-02-06T18:30:00",
+		"rsvp_status": "attending"
+	}, {
+		"id": "172720482828759",
+		"name": "DUBSTEP.LT presents OUTLOOK FESTIVAL LAUNCH PARTY",
+		"end_time": "2012-02-18T05:00:00",
+		"location": "LOFTAS",
+		"start_time": "2012-02-17T22:00:00",
+		"rsvp_status": "attending"
+	}, {
+		"id": "236213196462017",
+		"name": "\"West Coast\" party",
+		"end_time": "2012-02-04T06:00:00",
+		"location": "Kiwi Club",
+		"start_time": "2012-02-03T23:00:00",
+		"rsvp_status": "unsure"
+	}
 ]
