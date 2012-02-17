@@ -64,36 +64,53 @@ exports.ApplicationWindow = function() {
 		height: "400dp",
 	}); 
 	
+	tableView.addEventListener('click', function(e) {
+		// alert(JSON.stringify(e.rowData.data));
+		
+		var EventProfile = require('ui/EventProfile').EventProfile(e.rowData.data);
+		self.add(EventProfile);
+		
+		Ti.API.info(JSON.stringify(e.rowData.data));
+	});
+	
 	self.add(tableView);
 	
+	var all_my_friends = [];
 	var all_events = [];
 	var table_data_events = [];
 
 	var populate_events = function() {
 
-		var data = {};
-
-		Titanium.Facebook.requestWithGraphPath('me/friends', data, 'GET', function(e) {
+		Titanium.Facebook.requestWithGraphPath('me/friends', {}, 'GET', function(e) {
 			if(e.success) {
 				alert("Success! Returned from FB: " + e.result);
 				
 				var result = JSON.parse(e.result);
+				
+				all_my_friends = result.data; 
+
+				// FIXME: not all friends are taken for now, only the first page
 
 				for (var i = 0; i < result.data.length; i++) {
 					
 					var friend = result.data[i];
 					
-					Titanium.Facebook.requestWithGraphPath(''+friend.id+'/events', data, 'GET', function(e) {
+					Titanium.Facebook.requestWithGraphPath(''+friend.id+'/events', {}, 'GET', function(e) {
 						if(e.success) {
 						
 							var events_result = JSON.parse(e.result);
+							
+							// FIXME: not all events are taken for now, only the first page
 							
 							for (var i = 0; i < events_result.data.length; i++) {
 								
 								// TODO: don't add suplicates!
 								
 								all_events.push(events_result.data[i]);
-								table_data_events.push({title: events_result.data[i].name});
+								table_data_events.push({
+									title: events_result.data[i].name, 
+									data: events_result.data[i]
+									});
 							}
 							
 							// all_events.concat(events_result.data).unique();
@@ -127,6 +144,7 @@ exports.ApplicationWindow = function() {
 	
 	if(Titanium.Facebook.loggedIn) {
 			loginView.hide();
+			tableView.show();
 			populate_events();
 	}
 
@@ -135,14 +153,13 @@ exports.ApplicationWindow = function() {
 		'user_events',
 		'friends_events',
 	];
-	
-	// Ti.Facebook.logout();
-	
+		
 	// Permissions your app needs
 	Titanium.Facebook.addEventListener('login', function(e) {
 		if(e.success) {
 			alert('Logged In');
 			loginView.hide();
+			tableView.show();
 			populate_events();
 			
 			Titanium.Facebook.requestWithGraphPath('me', {}, 'GET', function(e) {
