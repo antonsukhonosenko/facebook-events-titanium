@@ -1,5 +1,7 @@
 //Application Window Component Constructor
 exports.ApplicationWindow = function() {
+	
+	var _ = require('underscore')._;
 
 	var self = Ti.UI.createWindow({
 		backgroundColor : '#fff',
@@ -80,7 +82,8 @@ exports.ApplicationWindow = function() {
 							
 							for (var i = 0; i < events_result.data.length; i++) {
 								
-								// TODO: don't add suplicates!
+								// TODO: don't add duplicates!
+								// TODO: if all_events already has object with events.result.data[i].id, don't add it 
 								
 								all_events.push(events_result.data[i]);
 								table_data_events.push({
@@ -89,14 +92,12 @@ exports.ApplicationWindow = function() {
 								});
 							}
 							
-							// all_events.concat(events_result.data).unique();
-							// all_events.push(events_result.data);
-
-							// eliminateDuplicates(all_events);  // FIXME: seems to not work
+							// all_events = _(all_events).chain().uniq(false, function(obj) { return obj.id; }).value();
+							// TODO: we don't want that ^^ bc we keep copy of all that data in table_data_events elements
 							
-							// Ti.API.log("total number of events: " + all_events.length);
+							table_data_events = _(table_data_events).chain().uniq(false, function(obj) { return obj.data.id; }).value();
 							
-							
+							Ti.API.log("total number of events: " + table_data_events.length);
 							
 							tableView.setData(table_data_events);
 

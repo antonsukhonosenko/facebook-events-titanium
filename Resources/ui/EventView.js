@@ -6,6 +6,8 @@ exports.EventView = function(data) {
 
 	// TODO: add back button
 	// TODO: add ability to checkin using Facebook Places
+	// TODO: rsvp and ban events
+	// TODO: event image and scroll view
 	
 	var self = Ti.UI.createView({
 		top : "0dp",
@@ -50,9 +52,16 @@ exports.EventView = function(data) {
 		text: data.location,
 	})
 	
+	var idLabel = Ti.UI.createLabel({
+		top: "170dp",
+		height: "40dp",
+		text: data.id,
+	})
+	
 	self.add(nameLabel);
 	self.add(locationLabel);
 	self.add(backButton);
+	self.add(idLabel);
 	
 	// TODO: add list of friends who RSVP that
 	
