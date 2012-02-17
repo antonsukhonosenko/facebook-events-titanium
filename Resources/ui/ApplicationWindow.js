@@ -1,46 +1,16 @@
 //Application Window Component Constructor
 exports.ApplicationWindow = function() {
 
-	function eliminateDuplicates(arr) {
-		var i, len = arr.length, out = [], obj = {};
-
-		for( i = 0; i < len; i++) {
-			obj[arr[i]] = 0;
-		}
-		for(i in obj) {
-			out.push(i);
-		}
-		return out;
-	}
-
 	var self = Ti.UI.createWindow({
 		backgroundColor : '#fff',
 		fullscreen : false,
 		exitOnClose : true,
 	});
 
-	var loginView = Ti.UI.createView({
-		top : "0dp",
-		height: "480dp",
-		backgroundColor: "fff",
-	});
-
-	var buttonFacebookLogin = Ti.UI.createButton({
-		title : "Facebook Connect",
-		top : "150dp",
-		height : "36dp"
-	});
-
-	buttonFacebookLogin.addEventListener('click', function() {
-		if(Titanium.Facebook.loggedIn) {
-			loginView.hide();
-			tableView.show();
-		} else {
-			Titanium.Facebook.authorize();
-		}
-	});
-
-	loginView.add(buttonFacebookLogin);
+	// invoke loginView
+	
+	var loginView = require('ui/LoginView').LoginView();
+	self.add(loginView);
 
 	var buttonFacebookLogout = Ti.UI.createButton({
 		title : "Facebook Disconnect",
@@ -55,9 +25,8 @@ exports.ApplicationWindow = function() {
 	});
 
 	self.add(buttonFacebookLogout);
-	self.add(loginView);
 	
-	// TODO: create table view for events
+	//  create table view for events
 	
 	var tableView = Ti.UI.createTableView({
 		top: "0dp",
@@ -67,8 +36,12 @@ exports.ApplicationWindow = function() {
 	tableView.addEventListener('click', function(e) {
 		// alert(JSON.stringify(e.rowData.data));
 		
-		var EventProfile = require('ui/EventProfile').EventProfile(e.rowData.data);
-		self.add(EventProfile);
+		// TODO: bevare memory issues!! 
+		// TODO: are we creating new eventView each time when we click on tableView?
+		// TODO: does this affect memory?
+		
+		var eventView = require('ui/EventView').EventView(e.rowData.data);
+		self.add(eventView);
 		
 		Ti.API.info(JSON.stringify(e.rowData.data));
 	});
@@ -80,6 +53,9 @@ exports.ApplicationWindow = function() {
 	var table_data_events = [];
 
 	var populate_events = function() {
+		
+		// clear before populating
+		tableView.setData([]);
 
 		Titanium.Facebook.requestWithGraphPath('me/friends', {}, 'GET', function(e) {
 			if(e.success) {
@@ -110,7 +86,7 @@ exports.ApplicationWindow = function() {
 								table_data_events.push({
 									title: events_result.data[i].name, 
 									data: events_result.data[i]
-									});
+								});
 							}
 							
 							// all_events.concat(events_result.data).unique();
@@ -119,6 +95,8 @@ exports.ApplicationWindow = function() {
 							// eliminateDuplicates(all_events);  // FIXME: seems to not work
 							
 							// Ti.API.log("total number of events: " + all_events.length);
+							
+							
 							
 							tableView.setData(table_data_events);
 
