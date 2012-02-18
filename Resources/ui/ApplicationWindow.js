@@ -93,9 +93,11 @@ exports.ApplicationWindow = function() {
 							}
 							
 							// all_events = _(all_events).chain().uniq(false, function(obj) { return obj.id; }).value();
-							// TODO: we don't want that ^^ bc we keep copy of all that data in table_data_events elements
+							// TODO: we don't want that ^^ bc we keep copy of all that data in table_data_events elements anyway
 							
 							table_data_events = _(table_data_events).chain().uniq(false, function(obj) { return obj.data.id; }).value();
+							
+							// TODO: sort by start time
 							
 							Ti.API.log("total number of events: " + table_data_events.length);
 							
@@ -120,11 +122,11 @@ exports.ApplicationWindow = function() {
 			}
 		});
 	};
-	
+
 	if(Titanium.Facebook.loggedIn) {
-			loginView.hide();
-			tableView.show();
-			populate_events();
+		loginView.hide();
+		tableView.show();
+		populate_events();
 	}
 
 	Titanium.Facebook.appid = '187742787964643';
