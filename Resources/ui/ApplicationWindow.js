@@ -84,6 +84,11 @@ exports.ApplicationWindow = function() {
 								
 								// TODO: don't add duplicates!
 								// TODO: if all_events already has object with events.result.data[i].id, don't add it 
+								// TODO: utilize underscore.js for above
+								
+								// TODO: get event image from https://graph.facebook.com/331218348435/picture request 
+								//       to show in events list tile view
+								// TODO: cache all in json-based local storage
 								
 								all_events.push(events_result.data[i]);
 								table_data_events.push({

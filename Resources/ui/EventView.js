@@ -68,8 +68,8 @@ exports.EventView = function(data) {
 			descriptionLabel.text = current_event.description;
 			Ti.API.info(e.result);
 			
-			// TODO: get owner with another request (/#{current_event.owner.id})
-			// TODO: get his picture to show in events list tile view
+			// TODO: get event image from https://graph.facebook.com/331218348435/picture request to show in events list tile view
+			// TODO: maybe get owner with another request (/#{current_event.owner.id})
 			// TODO: cache all in json-based local storage
 			
 		} else {
