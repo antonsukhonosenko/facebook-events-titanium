@@ -12,7 +12,7 @@ exports.EventView = function(data) {
 	var self = Ti.UI.createView({
 		top : "0dp",
 		height : "480dp",
-		backgroundColor : "fff",
+		backgroundColor : "#fff",
 	});
 
 	var backButton = Ti.UI.createButton({
@@ -53,12 +53,30 @@ exports.EventView = function(data) {
 		top: "210dp",
 		height: "200dp"
 	});
+	
+	Ti.API.info('http:/graph.facebook.com/'+data.id+'/picture');
+	
+	var imageView = Ti.UI.createImageView({
+		// image: 'http:/graph.facebook.com/'+data.id+'/picture',
+		image: "https://graph.facebook.com/" + (data.id || 0) + "/picture?type=normal&access_token=" + Ti.Facebook.accessToken,
+		top: "40dp",
+		left: "200dp",
+		width: "120dp",
+		height: "120dp",
+	})
+	
+	// TODO: add onclick to show larger image in fullscreen mode
 
 	self.add(nameLabel);
 	self.add(locationLabel);
 	self.add(backButton);
 	self.add(idLabel);
 	self.add(descriptionLabel);
+	
+	// NOTE: works either way
+	// imageView.setBackgroundImage = 'http:/graph.facebook.com/'+data.id+'/picture';
+	
+	self.add(imageView);
 
 	// TODO: add list of friends who RSVP that
 
@@ -74,9 +92,9 @@ exports.EventView = function(data) {
 			
 		} else {
 			if(e.error) {
-				alert(e.error);
+				// alert(e.error);
 			} else {
-				alert("Unknown result");
+				// alert("Unknown result");
 			}
 		}
 	});

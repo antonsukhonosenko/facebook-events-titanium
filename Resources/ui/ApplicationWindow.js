@@ -29,6 +29,8 @@ exports.ApplicationWindow = function() {
 	self.add(buttonFacebookLogout);
 	
 	//  create table view for events
+	// TODO: add tile view
+	// TODO: add top bar to change tile/list view modes
 	
 	var tableView = Ti.UI.createTableView({
 		top: "0dp",
@@ -36,7 +38,7 @@ exports.ApplicationWindow = function() {
 	}); 
 	
 	tableView.addEventListener('click', function(e) {
-		// alert(JSON.stringify(e.rowData.data));
+		// // alert(JSON.stringify(e.rowData.data));
 		
 		// TODO: bevare memory issues!! 
 		// TODO: are we creating new eventView each time when we click on tableView?
@@ -61,7 +63,7 @@ exports.ApplicationWindow = function() {
 
 		Titanium.Facebook.requestWithGraphPath('me/friends', {}, 'GET', function(e) {
 			if(e.success) {
-				alert("Success! Returned from FB: " + e.result);
+				// alert("Success! Returned from FB: " + e.result);
 				
 				var result = JSON.parse(e.result);
 				
@@ -86,8 +88,10 @@ exports.ApplicationWindow = function() {
 								// TODO: if all_events already has object with events.result.data[i].id, don't add it 
 								// TODO: utilize underscore.js for above
 								
-								// TODO: get event image from https://graph.facebook.com/331218348435/picture request 
+								// TODO: get event image
+								// 		 image: "https://graph.facebook.com/" + (data.id || 0) + "/picture?type=normal&access_token=" + Ti.Facebook.accessToken
 								//       to show in events list tile view
+								
 								// TODO: cache all in json-based local storage
 								
 								all_events.push(events_result.data[i]);
@@ -110,9 +114,9 @@ exports.ApplicationWindow = function() {
 
 						} else {
 							if(e.error) {
-								alert(e.error);
+								// alert(e.error);
 							} else {
-								alert("Unknown result");
+								// alert("Unknown result");
 							}
 						}
 					});
@@ -120,9 +124,9 @@ exports.ApplicationWindow = function() {
 				
 			} else {
 				if(e.error) {
-					alert(e.error);
+					// alert(e.error);
 				} else {
-					alert("Unknown result");
+					// alert("Unknown result");
 				}
 			}
 		});
@@ -143,25 +147,25 @@ exports.ApplicationWindow = function() {
 	// Permissions your app needs
 	Titanium.Facebook.addEventListener('login', function(e) {
 		if(e.success) {
-			alert('Logged In');
+			// alert('Logged In');
 			loginView.hide();
 			tableView.show();
 			populate_events();
 			
 			Titanium.Facebook.requestWithGraphPath('me', {}, 'GET', function(e) {
 				if(e.success) {
-					alert(e.result);
-					// alert('access_token = ', Titanium.Facebook.getAccessToken());
+					// alert(e.result);
+					// // alert('access_token = ', Titanium.Facebook.getAccessToken());
 				} else if(e.error) {
-					alert(e.error);
+					// alert(e.error);
 				} else {
-					alert('Unknown response');
+					// alert('Unknown response');
 				}
 			});
 		} else if(e.error) {
-			alert(e.error);
+			// alert(e.error);
 		} else if(e.cancelled) {
-			alert("Cancelled");
+			// alert("Cancelled");
 		}
 	});
 	

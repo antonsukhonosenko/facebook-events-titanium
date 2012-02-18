@@ -3,7 +3,7 @@ exports.LoginView = function(data) {
 	var self = Ti.UI.createView({
 		top : "0dp",
 		height: "480dp",
-		backgroundColor: "ccc",
+		backgroundColor: "#ccc",
 		zIndex: "100"
 	});
 
@@ -22,7 +22,6 @@ exports.LoginView = function(data) {
 	});
 
 	self.add(buttonFacebookLogin);
-
 
 	return self;
 }
