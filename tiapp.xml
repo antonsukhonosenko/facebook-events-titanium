@@ -3,14 +3,14 @@
     <deployment-targets>
         <target device="mobileweb">false</target>
         <target device="iphone">true</target>
-        <target device="ipad">false</target>
+        <target device="ipad">true</target>
         <target device="android">true</target>
         <target device="blackberry">false</target>
     </deployment-targets>
     <sdk-version>1.8.1</sdk-version>
     <id>com.nomorezebra.vkevents</id>
     <name>vkevents</name>
-    <version>1.0</version>
+    <version>1.1</version>
     <publisher>zoreslav</publisher>
     <url>http://nomorezebra.com</url>
     <description>not specified</description>
@@ -22,7 +22,7 @@
     <statusbar-hidden>false</statusbar-hidden>
     <fullscreen>false</fullscreen>
     <navbar-hidden>false</navbar-hidden>
-    <analytics>true</analytics>
+    <analytics>false</analytics>
     <guid>e602e045-a620-4fea-8ded-f49fcb277db1</guid>
     <iphone>
         <orientations device="iphone">
@@ -30,9 +30,6 @@
         </orientations>
         <orientations device="ipad">
             <orientation>Ti.UI.PORTRAIT</orientation>
-            <orientation>Ti.UI.UPSIDE_PORTRAIT</orientation>
-            <orientation>Ti.UI.LANDSCAPE_LEFT</orientation>
-            <orientation>Ti.UI.LANDSCAPE_RIGHT</orientation>
         </orientations>
     </iphone>
     <android xmlns:android="http://schemas.android.com/apk/res/android"/>

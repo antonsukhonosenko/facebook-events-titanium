@@ -11,10 +11,17 @@ exports.EventView = function(data) {
 
 	var self = Ti.UI.createView({
 		top : "0dp",
-		height : "480dp",
+		height : "100%",
 		backgroundColor : "#fff",
 	});
 
+	var scrollView = Titanium.UI.createScrollView({
+		contentWidth : 'auto',
+		contentHeight : 'auto',
+		top : "45dp",
+		showVerticalScrollIndicator : true,
+	});
+	
 	var backButton = Ti.UI.createButton({
 		title : "Back",
 		top : "5dp",
@@ -30,36 +37,47 @@ exports.EventView = function(data) {
 		// TODO: does this affect memory?
 
 		self.hide();
+		
+		// TODO: following is a humble attempt to manage memory issues
+		
+		// self.remove();
+		// self = null;
 	});
 	var nameLabel = Ti.UI.createLabel({
-		top : "50dp",
-		height : "40dp",
-		text : data.name,
+		top: "0dp",
+		left: "0dp",
+		height: "30dp",
+		width: "200dp",
+		text: data.name,
+		font: {
+			fontSize: 12
+		}
 	})
 
 	var locationLabel = Ti.UI.createLabel({
-		top : "90dp",
-		height : "80dp",
-		text : data.location,
-	})
-
-	var idLabel = Ti.UI.createLabel({
-		top : "170dp",
+		top : "30dp",
+		left: "0dp",
 		height : "40dp",
-		text : data.id,
+		width: "200dp",
+		text : data.location,
+				font: {
+			fontSize: 12
+		}
 	})
 	
 	var descriptionLabel = Ti.UI.createLabel({
-		top: "210dp",
-		height: "200dp"
+		top: "130dp",
+		height: "auto",
+		font: {
+			fontSize: 12
+		}
 	});
 	
 	Ti.API.info('http:/graph.facebook.com/'+data.id+'/picture');
 	
 	var imageView = Ti.UI.createImageView({
-		// image: 'http:/graph.facebook.com/'+data.id+'/picture',
-		image: "https://graph.facebook.com/" + (data.id || 0) + "/picture?type=normal&access_token=" + Ti.Facebook.accessToken,
-		top: "40dp",
+		image: "https://graph.facebook.com/" + (data.id || 0) + "/picture?type=large&access_token=" + Ti.Facebook.accessToken,
+		top: "0dp",
 		left: "200dp",
 		width: "120dp",
 		height: "120dp",
@@ -67,16 +85,14 @@ exports.EventView = function(data) {
 	
 	// TODO: add onclick to show larger image in fullscreen mode
 
-	self.add(nameLabel);
-	self.add(locationLabel);
+	scrollView.add(nameLabel);
+	scrollView.add(locationLabel);
+	scrollView.add(descriptionLabel);
+	
+	scrollView.add(imageView);
+
 	self.add(backButton);
-	self.add(idLabel);
-	self.add(descriptionLabel);
-	
-	// NOTE: works either way
-	// imageView.setBackgroundImage = 'http:/graph.facebook.com/'+data.id+'/picture';
-	
-	self.add(imageView);
+	self.add(scrollView);
 
 	// TODO: add list of friends who RSVP that
 

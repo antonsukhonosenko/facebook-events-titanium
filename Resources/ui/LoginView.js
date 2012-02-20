@@ -2,15 +2,17 @@ exports.LoginView = function(data) {
 
 	var self = Ti.UI.createView({
 		top : "0dp",
-		height: "480dp",
+		height: "100%",
 		backgroundColor: "#ccc",
 		zIndex: "100"
 	});
 
 	var buttonFacebookLogin = Ti.UI.createButton({
 		title : "Facebook Connect",
-		top : "150dp",
-		height : "36dp"
+		top : (Titanium.Platform.osname==='iphone'?"150dp":"900dp"),
+		height : "40dp",
+		left: (Titanium.Platform.osname==='iphone'?"5dp":"120dp"),
+		right: (Titanium.Platform.osname==='iphone'?"5dp":"120dp"),
 	});
 
 	buttonFacebookLogin.addEventListener('click', function() {

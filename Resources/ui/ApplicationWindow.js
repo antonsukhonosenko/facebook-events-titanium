@@ -1,40 +1,70 @@
 //Application Window Component Constructor
 exports.ApplicationWindow = function() {
 	
+	Ti.API.log(JSON.stringify(Titanium.Platform.osname));
+	
 	var _ = require('underscore')._;
 
 	var self = Ti.UI.createWindow({
-		backgroundColor : '#fff',
+		backgroundColor : '#066',
 		fullscreen : false,
 		exitOnClose : true,
+		top: "0dp",
+		title:'Friends Events',
+		navBarHidden: false,
+		//width: "100%",
+		//height: "100%"
 	});
 
 	// invoke loginView
 	
 	var loginView = require('ui/LoginView').LoginView();
 	self.add(loginView);
-
-	var buttonFacebookLogout = Ti.UI.createButton({
-		title : "Facebook Disconnect",
-		top : "420dp",
-		height : "36dp"
+	
+	var headerLabel = Ti.UI.createLabel({
+		text: "Friends events",
+		top: "0dp",
+		height: "44dp",
+		textAlign:'center',
+		color:"#fff",
+		font: {
+			fontSize: 18,
+			fontWeight: "bold",
+		},
+		zIndex: 100,
 	});
 
-	buttonFacebookLogout.addEventListener('click', function(e) {
-		Titanium.Facebook.logout();
-		loginView.show();
-		tableView.hide();
+	var buttonFacebookLogout = Ti.UI.createButton({
+		title: "Logout",
+		top: "4dp",
+		height: "36dp",
+		width: "64dp",
+		right: "5dp",
+	});
+
+	var searchBar = Ti.UI.createSearchBar({
+		autocapitalization: Ti.UI.TEXT_AUTOCAPITALIZATION_NONE,
+		autocorrect: false,
+		hintText: "search...",
+		// showCancel: true,
+		top: "0dp",
 	});
 
 	self.add(buttonFacebookLogout);
+	self.add(headerLabel);
 	
 	//  create table view for events
 	// TODO: add tile view
 	// TODO: add top bar to change tile/list view modes
+	// TODO: add search field and search by name
+	// TODO: search by date
 	
 	var tableView = Ti.UI.createTableView({
-		top: "0dp",
-		height: "400dp",
+		top: "44dp",
+		height: "100%",
+		search: searchBar,
+		filterAttribute : 'name',
+		data : [{title:'loading...'}],
 	}); 
 	
 	tableView.addEventListener('click', function(e) {
@@ -51,6 +81,12 @@ exports.ApplicationWindow = function() {
 	});
 	
 	self.add(tableView);
+	
+	buttonFacebookLogout.addEventListener('click', function(e) {
+		Titanium.Facebook.logout();
+		loginView.show();
+		tableView.hide();
+	});
 	
 	var all_my_friends = [];
 	var all_events = [];
@@ -80,6 +116,8 @@ exports.ApplicationWindow = function() {
 						
 							var events_result = JSON.parse(e.result);
 							
+							// TODO: filter by where your friends are going or NOT going ;)
+							
 							// FIXME: not all events are taken for now, only the first page
 							
 							for (var i = 0; i < events_result.data.length; i++) {
@@ -94,11 +132,49 @@ exports.ApplicationWindow = function() {
 								
 								// TODO: cache all in json-based local storage
 								
+								// TODO: on tablerow.show, update picture if it is not loaded first time
+								
+								// TODO: images are all different size. we can put them through some sort of
+								//		 squarify() function, image transformation function as one of those we used in citymedia
+								//		 like "http://nomorezebra.com/tools/squarify/https://graph.facebook.com/5648596469084/picture?type=normal&access_token=" + Ti.Facebook.accessToken
+								//		 don't know if it's a good idea to squarify on device, but we have lost of requests anyway
+								//		 so I think if we have cache, it's ok
+								
 								all_events.push(events_result.data[i]);
-								table_data_events.push({
-									title: events_result.data[i].name, 
-									data: events_result.data[i]
+								
+								// Ti.API.info("https://graph.facebook.com/" + (events_result.data[i].id || 0) + "/picture?type=small&access_token=" + Ti.Facebook.accessToken);
+								
+								var table_row_data = {
+									data: events_result.data[i],
+									hasChild: true,
+									className:"event_layout",
+									name: events_result.data[i].name,
+								};
+								
+								
+								var row = Ti.UI.createTableViewRow(table_row_data);
+								
+								var label = Ti.UI.createLabel({
+									left : "50dp",
+									text : events_result.data[i].name,
+									font : {
+										fontSize : 12
+									}
 								});
+								
+								var image = Ti.UI.createImageView({
+									top: "0dp",
+									left: "0dp",
+									width: "44dp",
+									height: "44dp",
+									image: "https://graph.facebook.com/" + (events_result.data[i].id || 0) + "/picture?type=small&access_token=" + Ti.Facebook.accessToken
+								});
+
+								row.add(label);
+								row.add(image);
+
+								
+								table_data_events.push(row);
 							}
 							
 							// all_events = _(all_events).chain().uniq(false, function(obj) { return obj.id; }).value();
@@ -108,7 +184,7 @@ exports.ApplicationWindow = function() {
 							
 							// TODO: sort by start time
 							
-							Ti.API.log("total number of events: " + table_data_events.length);
+							// Ti.API.log("total number of events: " + table_data_events.length);
 							
 							tableView.setData(table_data_events);
 

@@ -1,8 +1,8 @@
-#appname: vkevents
-#publisher: zoreslav
-#url: http://nomorezebra.com
-#image: appicon.png
-#appid: com.nomorezebra.vkevents
-#desc: undefined
-#type: mobile
-#guid: e602e045-a620-4fea-8ded-f49fcb277db1
+#appname:vkevents
+#publisher:zoreslav
+#url:http://nomorezebra.com
+#image:appicon.png
+#appid:com.nomorezebra.vkevents
+#desc:not specified
+#type:ipad
+#guid:e602e045-a620-4fea-8ded-f49fcb277db1
