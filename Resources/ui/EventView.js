@@ -13,21 +13,47 @@ exports.EventView = function(data) {
 		top : "0dp",
 		height : "100%",
 		backgroundColor : "#fff",
+		zIndex: 103
 	});
+	
+	var headerLabel = Ti.UI.createLabel({
+		text: "Event Details",
+		top: "0dp",
+		height: "44dp",
+		textAlign:'center',
+		color:"#fff",
+		font: {
+			fontSize: 18,
+			fontWeight: "bold"
+		},
+		zIndex: 100,
+		backgroundImage: "images/iphone_title_bar_blue.png" // FIXME: strange <Error>: CGContextConcatCTM: invalid context 0x0 etc etc. yet it works
+	});
+	
+	self.add(headerLabel);
 
 	var scrollView = Titanium.UI.createScrollView({
-		contentWidth : 'auto',
+		contentWidth : Titanium.Platform.osname==='iphone'?"320dp":"768dp",
 		contentHeight : 'auto',
 		top : "45dp",
-		showVerticalScrollIndicator : true,
+		showVerticalScrollIndicator : true
 	});
 	
 	var backButton = Ti.UI.createButton({
 		title : "Back",
-		top : "5dp",
+		top : "8dp",
 		left : "5dp",
-		width : "64dp",
-		height : "36dp"
+		width : "50dp",
+		height : "29dp",
+		color: "white",
+		selectedColor: "gray",
+		font: {
+			fontSize: 12,
+			fontWeight: "bold"
+		},
+		backgroundImage: "images/iphone_title_button_blue.png",
+		backgroundSelectedImage: "images/iphone_title_button_blue.png",
+		zIndex: 102
 	});
 
 	backButton.addEventListener('click', function(e) {
@@ -44,44 +70,72 @@ exports.EventView = function(data) {
 		// self = null;
 	});
 	var nameLabel = Ti.UI.createLabel({
-		top: "0dp",
-		left: "0dp",
-		height: "30dp",
-		width: "200dp",
+		top: "5dp",
+		left: "5dp",
+		right: "5dp",
+		height: "44dp",
+		width: Titanium.Platform.osname==='iphone'?"320dp":"768dp",
+		textAlign: "center",
 		text: data.name,
 		font: {
-			fontSize: 12
+			fontSize: 18,
+			fontWeight: "bold"
 		}
-	})
+	});
+	
+	var imageView = Ti.UI.createImageView({
+		image: "https://graph.facebook.com/" + (data.id || 0) + "/picture?type=large&access_token=" + Ti.Facebook.accessToken,
+		top: "50dp",
+		right: "5dp",
+		width: Titanium.Platform.osname==='iphone'?"320dp":"768dp",
+		height: "120dp"
+	});
+	
+	imageView.touchEnabled = true;
+	
+	imageView.addEventListener('click', function(e) {
+		
+		Ti.API.info('clicked');
+		
+		var largeImageView = Ti.UI.createImageView({
+			image: "https://graph.facebook.com/" + (data.id || 0) + "/picture?type=large&access_token=" + Ti.Facebook.accessToken,
+			top: "0dp",
+			height: "100%",
+			zIndex: 200,
+			backgroundColor: "#000"
+		});
+		
+		self.add(largeImageView);
+		
+		largeImageView.addEventListener('click', function(e){
+			largeImageView.hide();
+		});
+		
+	});
 
 	var locationLabel = Ti.UI.createLabel({
-		top : "30dp",
-		left: "0dp",
+		top : "180dp",
+		left: "5dp",
+		right: "5dp",
 		height : "40dp",
-		width: "200dp",
+		width: Titanium.Platform.osname==='iphone'?"320dp":"768dp",
+		textAlign: "left",
 		text : data.location,
-				font: {
-			fontSize: 12
-		}
-	})
-	
-	var descriptionLabel = Ti.UI.createLabel({
-		top: "130dp",
-		height: "auto",
 		font: {
 			fontSize: 12
 		}
 	});
 	
-	Ti.API.info('http:/graph.facebook.com/'+data.id+'/picture');
-	
-	var imageView = Ti.UI.createImageView({
-		image: "https://graph.facebook.com/" + (data.id || 0) + "/picture?type=large&access_token=" + Ti.Facebook.accessToken,
-		top: "0dp",
-		left: "200dp",
-		width: "120dp",
-		height: "120dp",
-	})
+	var descriptionLabel = Ti.UI.createLabel({
+		top: "230dp",
+		height: "auto",
+		left: "5dp",
+		right: "5dp",
+		width: Titanium.Platform.osname==='iphone'?"320dp":"768dp",		
+		font: {
+			fontSize: 12
+		}
+	});
 	
 	// TODO: add onclick to show larger image in fullscreen mode
 
@@ -116,4 +170,4 @@ exports.EventView = function(data) {
 	});
 	
 	return self;
-}
+};

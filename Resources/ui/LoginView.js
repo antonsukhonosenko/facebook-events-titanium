@@ -4,7 +4,7 @@ exports.LoginView = function(data) {
 		top : "0dp",
 		height: "100%",
 		backgroundColor: "#ccc",
-		zIndex: "100"
+		zIndex: 105
 	});
 
 	var buttonFacebookLogin = Ti.UI.createButton({
