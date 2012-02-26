@@ -52,7 +52,8 @@ exports.EventView = function(data) {
 			fontWeight: "bold"
 		},
 		backgroundImage: "images/iphone_title_button_blue.png",
-		backgroundSelectedImage: "images/iphone_title_button_blue.png",
+		backgroundFocusedImage: "images/iphone_title_button_blue_focused.png",
+		backgroundSelectedImage: "images/iphone_title_button_blue_focused.png",
 		zIndex: 102
 	});
 

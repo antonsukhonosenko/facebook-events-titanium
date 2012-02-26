@@ -9,10 +9,10 @@ exports.LoginView = function(data) {
 
 	var buttonFacebookLogin = Ti.UI.createButton({
 		title : "Facebook Connect",
-		top : (Titanium.Platform.osname==='iphone'?"150dp":"900dp"),
+		top : (Titanium.Platform.osname==='ipad'?"900dp":"150dp"),
 		height : "40dp",
-		left: (Titanium.Platform.osname==='iphone'?"5dp":"120dp"),
-		right: (Titanium.Platform.osname==='iphone'?"5dp":"120dp"),
+		left: (Titanium.Platform.osname==='ipad'?"120dp":"5dp"),
+		right: (Titanium.Platform.osname==='ipad'?"120dp":"5dp"),
 	});
 
 	buttonFacebookLogin.addEventListener('click', function() {

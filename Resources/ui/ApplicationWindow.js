@@ -6,7 +6,7 @@ exports.ApplicationWindow = function() {
 	var _ = require('underscore')._;
 
 	var self = Ti.UI.createWindow({
-		backgroundColor : '#066',
+		backgroundColor : '#fff',
 		fullscreen : false,
 		exitOnClose : true,
 		top: "0dp",
@@ -48,7 +48,8 @@ exports.ApplicationWindow = function() {
 			fontWeight: "bold"
 		},
 		backgroundImage: "images/iphone_title_button_blue.png",
-		backgroundSelectedImage: "images/iphone_title_button_blue.png",
+		backgroundFocusedImage: "images/iphone_title_button_blue_focused.png",
+		backgroundSelectedImage: "images/iphone_title_button_blue_focused.png",		
 		zIndex: 102
 	});
 
@@ -74,6 +75,7 @@ exports.ApplicationWindow = function() {
 		height: "100%",
 		search: searchBar,
 		filterAttribute : 'name',
+		backgroundColor: "#fff",
 		data : [{title:'loading...'}]
 	}); 
 	
@@ -94,6 +96,7 @@ exports.ApplicationWindow = function() {
 	
 	buttonFacebookLogout.addEventListener('click', function(e) {
 		Titanium.Facebook.logout();
+		
 		loginView.show();
 		tableView.hide();
 	});
@@ -141,11 +144,14 @@ exports.ApplicationWindow = function() {
 
 				table_data_events.push(row);
 			}
+			
 			table_data_events = _(table_data_events).chain().uniq(false, function(obj) {
 				return obj.data.id;
+			}).sortBy( function(obj) { 
+				return obj.data.start_time; // TODO: sort by start time
 			}).value();
 
-			// TODO: sort by start time
+			// TODO: remove or mark passed events
 
 			tableView.setData(table_data_events);
 
