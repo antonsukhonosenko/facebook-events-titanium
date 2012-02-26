@@ -4,6 +4,8 @@ exports.ApplicationWindow = function() {
 	Ti.API.log(JSON.stringify(Titanium.Platform.osname));
 	
 	var _ = require('underscore')._;
+	
+	require('date');
 
 	var self = Ti.UI.createWindow({
 		backgroundColor : '#fff',
@@ -72,7 +74,7 @@ exports.ApplicationWindow = function() {
 	
 	var tableView = Ti.UI.createTableView({
 		top: "44dp",
-		height: "100%",
+		height: (Titanium.Platform.osname==='ipad'?"936dp":"416dp"),
 		search: searchBar,
 		filterAttribute : 'name',
 		backgroundColor: "#fff",
@@ -112,6 +114,11 @@ exports.ApplicationWindow = function() {
 
 			for(var i = 0; i < events_result.data.length; i++) {
 
+				// don't process any events from the past
+				if((Date.today()-Date.parse(events_result.data[i].start_time))>0) {
+					continue;
+				}
+
 				all_events.push(events_result.data[i]);
 
 				var table_row_data = {
@@ -148,10 +155,9 @@ exports.ApplicationWindow = function() {
 			table_data_events = _(table_data_events).chain().uniq(false, function(obj) {
 				return obj.data.id;
 			}).sortBy( function(obj) { 
-				return obj.data.start_time; // TODO: sort by start time
+				// DONE: sort by start time and remove past events
+				return obj.data.start_time;
 			}).value();
-
-			// TODO: remove or mark passed events
 
 			tableView.setData(table_data_events);
 
@@ -184,22 +190,10 @@ exports.ApplicationWindow = function() {
 					var friend = result.data[i];
 					
 					// TODO: don't add duplicates!
-								// TODO: if all_events already has object with events.result.data[i].id, don't add it 
-								// TODO: utilize underscore.js for above
+					// TODO: if all_events already has object with events.result.data[i].id, don't add it 
+					// TODO: utilize underscore.js for above
 								
-								// TODO: get event image
-								// 		 image: "https://graph.facebook.com/" + (data.id || 0) + "/picture?type=normal&access_token=" + Ti.Facebook.accessToken
-								//       to show in events list tile view
-								
-								// TODO: cache all in json-based local storage
-								
-								// TODO: on tablerow.show, update picture if it is not loaded first time
-								
-								// TODO: images are all different size. we can put them through some sort of
-								//		 squarify() function, image transformation function as one of those we used in citymedia
-								//		 like "http://nomorezebra.com/tools/squarify/https://graph.facebook.com/5648596469084/picture?type=normal&access_token=" + Ti.Facebook.accessToken
-								//		 don't know if it's a good idea to squarify on device, but we have lost of requests anyway
-								//		 so I think if we have cache, it's ok
+					// TODO: cache all in json-based local storage
 								
 					// TODO: filter by where your friends are going or NOT going ;)
 							

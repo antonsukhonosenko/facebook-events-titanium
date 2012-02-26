@@ -8,6 +8,8 @@ exports.EventView = function(data) {
 	// TODO: add ability to checkin using Facebook Places
 	// TODO: rsvp and ban events
 	// TODO: event image and scroll view
+	
+	require('date');
 
 	var self = Ti.UI.createView({
 		top : "0dp",
@@ -96,20 +98,31 @@ exports.EventView = function(data) {
 	
 	imageView.addEventListener('click', function(e) {
 		
-		Ti.API.info('clicked');
-		
 		var largeImageView = Ti.UI.createImageView({
 			image: "https://graph.facebook.com/" + (data.id || 0) + "/picture?type=large&access_token=" + Ti.Facebook.accessToken,
 			top: "0dp",
 			height: "100%",
 			zIndex: 200,
-			backgroundColor: "#000"
+			backgroundColor: "#000",
+			opacity: 0.0
 		});
 		
 		self.add(largeImageView);
+
+		var animation = Titanium.UI.createAnimation();
+		animation.opacity = 1.0;
+		animation.duration = 300;
+		
+		largeImageView.animate(animation);
 		
 		largeImageView.addEventListener('click', function(e){
-			largeImageView.hide();
+			animation.opacity = 0.0;
+			animation.duration = 300;
+			animation.addEventListener('complete', function(e){
+				self.remove(largeImageView);
+				largeImageView = null;
+			});
+			largeImageView.animate(animation);
 		});
 		
 	});
@@ -137,8 +150,6 @@ exports.EventView = function(data) {
 			fontSize: 12
 		}
 	});
-	
-	// TODO: add onclick to show larger image in fullscreen mode
 
 	scrollView.add(nameLabel);
 	scrollView.add(locationLabel);
@@ -163,9 +174,9 @@ exports.EventView = function(data) {
 			
 		} else {
 			if(e.error) {
-				// alert(e.error);
+				Ti.API.info(e.error);
 			} else {
-				// alert("Unknown result");
+				Ti.API.info("Unknown result");
 			}
 		}
 	});
