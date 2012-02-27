@@ -72,6 +72,7 @@ exports.EventView = function(data) {
 		// self.remove();
 		// self = null;
 	});
+	
 	var nameLabel = Ti.UI.createLabel({
 		top: "5dp",
 		left: "5dp",
@@ -133,15 +134,28 @@ exports.EventView = function(data) {
 		right: "5dp",
 		height : "40dp",
 		width: Titanium.Platform.osname==='iphone'?"320dp":"768dp",
-		textAlign: "left",
+		textAlign: "center",
 		text : data.location,
 		font: {
 			fontSize: 12
 		}
 	});
 	
-	var descriptionLabel = Ti.UI.createLabel({
+	var dateLabel = Ti.UI.createLabel({
 		top: "230dp",
+		left: "5dp",
+		right: "5dp",
+		height : "40dp",
+		width: Titanium.Platform.osname==='iphone'?"320dp":"768dp",
+		textAlign: "center",
+		text : Date.parse(data.start_time).toString("HH:mm, dd-MMM-yyyy"),
+		font: {
+			fontSize: 12
+		}
+	});
+	
+	var descriptionLabel = Ti.UI.createLabel({
+		top: "280dp",
 		height: "auto",
 		left: "5dp",
 		right: "5dp",
@@ -153,6 +167,7 @@ exports.EventView = function(data) {
 
 	scrollView.add(nameLabel);
 	scrollView.add(locationLabel);
+	scrollView.add(dateLabel);
 	scrollView.add(descriptionLabel);
 	
 	scrollView.add(imageView);

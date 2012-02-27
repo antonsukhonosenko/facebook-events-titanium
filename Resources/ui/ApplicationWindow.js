@@ -6,6 +6,8 @@ exports.ApplicationWindow = function() {
 	var _ = require('underscore')._;
 	
 	require('date');
+	
+	// TODO: use Ti.UI.iPad split view for iPad version
 
 	var self = Ti.UI.createWindow({
 		backgroundColor : '#fff',
@@ -14,8 +16,6 @@ exports.ApplicationWindow = function() {
 		top: "0dp",
 		title:'Friends Events',
 		navBarHidden: false
-		//width: "100%",
-		//height: "100%"
 	});
 
 	// invoke loginView
@@ -81,12 +81,19 @@ exports.ApplicationWindow = function() {
 		data : [{title:'loading...'}]
 	}); 
 	
+	var search_value = "";
+	
 	tableView.addEventListener('click', function(e) {
 		// Ti.API.info(JSON.stringify(e.rowData.data));
 		
 		// TODO: bevare memory issues!! 
 		// TODO: are we creating new eventView each time when we click on tableView?
 		// TODO: does this affect memory?
+		
+		//if(searchBar.value) {
+		//	Ti.API.info(searchBar.value);
+		//	search_value = searchBar.value;
+		//}
 		
 		var eventView = require('ui/EventView').EventView(e.rowData.data);
 		self.add(eventView);
@@ -95,6 +102,14 @@ exports.ApplicationWindow = function() {
 	});
 	
 	self.add(tableView);
+
+	//self.addEventListener('focus', function(e) {
+	//	if(search_value!="") {
+	//		Ti.API.info(searchBar.value);
+	//		searchBar.value = search_value;
+	//		search_value = "";
+	//	}
+	//});
 	
 	buttonFacebookLogout.addEventListener('click', function(e) {
 		Titanium.Facebook.logout();
