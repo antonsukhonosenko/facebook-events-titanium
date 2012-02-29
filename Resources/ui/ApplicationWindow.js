@@ -5,7 +5,7 @@ exports.ApplicationWindow = function() {
 	
 	var _ = require('underscore')._;
 	
-	require('date');
+	require('date'); // This adds Date.js library, extending standard Date() object
 	
 	// TODO: use Ti.UI.iPad split view for iPad version
 

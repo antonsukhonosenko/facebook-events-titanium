@@ -9,7 +9,7 @@ exports.EventView = function(data) {
 	// TODO: rsvp and ban events
 	// TODO: event image and scroll view
 	
-	require('date');
+	require('date');  // This adds Date.js library, extending standard Date() object
 
 	var self = Ti.UI.createView({
 		top : "0dp",
