@@ -61,7 +61,7 @@ exports.EventView = function(data) {
 
 	backButton.addEventListener('click', function(e) {
 
-		// TODO: bevare memory issues!!
+		// TODO: beware memory issues!!
 		// TODO: are we creating new eventView each time when we click on tableView?
 		// TODO: does this affect memory?
 
