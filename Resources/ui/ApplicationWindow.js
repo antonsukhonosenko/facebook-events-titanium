@@ -15,7 +15,7 @@ exports.ApplicationWindow = function() {
 		exitOnClose : true,
 		top: "0dp",
 		title:'Friends Events',
-		navBarHidden: false
+		navBarHidden: false,
 	});
 
 	// invoke loginView
@@ -34,7 +34,9 @@ exports.ApplicationWindow = function() {
 			fontWeight: "bold"
 		},
 		zIndex: 100,
-		backgroundImage: "images/iphone_title_bar_blue.png"
+		backgroundImage: "images/iphone_title_bar_blue.png",
+		backgroundRepeat: true,
+		width: "100%",
 	});
 
 	var buttonFacebookLogout = Ti.UI.createButton({
@@ -86,7 +88,7 @@ exports.ApplicationWindow = function() {
 	tableView.addEventListener('click', function(e) {
 		// Ti.API.info(JSON.stringify(e.rowData.data));
 		
-		// TODO: bevare memory issues!! 
+		// TODO: beware memory issues!! 
 		// TODO: are we creating new eventView each time when we click on tableView?
 		// TODO: does this affect memory?
 		
@@ -102,14 +104,6 @@ exports.ApplicationWindow = function() {
 	});
 	
 	self.add(tableView);
-
-	//self.addEventListener('focus', function(e) {
-	//	if(search_value!="") {
-	//		Ti.API.info(searchBar.value);
-	//		searchBar.value = search_value;
-	//		search_value = "";
-	//	}
-	//});
 	
 	buttonFacebookLogout.addEventListener('click', function(e) {
 		Titanium.Facebook.logout();
@@ -147,6 +141,8 @@ exports.ApplicationWindow = function() {
 
 				var label = Ti.UI.createLabel({
 					left : "50dp",
+					top  : "0dp",
+					height: "64dp", 
 					text : events_result.data[i].name,
 					font : {
 						fontSize : 12
@@ -215,7 +211,7 @@ exports.ApplicationWindow = function() {
 					// FIXME: not all events are taken for now, only the first page
 										
 					
-					Titanium.Facebook.requestWithGraphPath(''+friend.id+'/events', {}, 'GET', process_events);
+					Titanium.Facebook.requestWithGraphPath(''+friend.id+'/events', {"limit":0}, 'GET', process_events);
 				}
 				
 			} else {
@@ -237,7 +233,9 @@ exports.ApplicationWindow = function() {
 	Titanium.Facebook.appid = '187742787964643';
 	Titanium.Facebook.permissions = [
 		'user_events',
-		'friends_events'
+		'friends_events',
+		'rsvp_event',
+		'publish_checkins'
 	];
 		
 	// Permissions your app needs

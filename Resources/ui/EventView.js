@@ -22,6 +22,7 @@ exports.EventView = function(data) {
 		text: "Event Details",
 		top: "0dp",
 		height: "44dp",
+		width: "100%",
 		textAlign:'center',
 		color:"#fff",
 		font: {
@@ -103,6 +104,7 @@ exports.EventView = function(data) {
 			image: "https://graph.facebook.com/" + (data.id || 0) + "/picture?type=large&access_token=" + Ti.Facebook.accessToken,
 			top: "0dp",
 			height: "100%",
+			width: "100%",
 			zIndex: 200,
 			backgroundColor: "#000",
 			opacity: 0.0
@@ -154,9 +156,81 @@ exports.EventView = function(data) {
 		}
 	});
 	
-	var descriptionLabel = Ti.UI.createLabel({
+	// RSVP buttons
+	// TODO: if this event is in user's me/events, highlight button accordingly
+	
+	var attend = Ti.UI.createButton({
 		top: "280dp",
-		height: "auto",
+		left: "5dp",
+		height: "30dp",
+		width: "100dp",
+		title: "I'm attending"
+	})
+	
+	var maybe = Ti.UI.createButton({
+		top: "280dp",
+		left: "110dp",
+		height: "30dp",
+		width: "100dp",
+		title: "Don't know"		
+	})
+	
+	var reject = Ti.UI.createButton({
+		top: "280dp",
+		left: "215dp",
+		height: "30dp",
+		width: "100dp",
+		title: "No"			
+	})
+	
+	attend.addEventListener('click', function(e) {
+		Ti.API.info(data.id);
+		Titanium.Facebook.requestWithGraphPath('/' + data.id + '/attending', {}, 'POST', function(e) {
+			if(e.success) {
+				Ti.API.info(e.result);
+			} else {
+				if(e.error) {
+					Ti.API.info(e.error);
+				} else {
+					Ti.API.info("Unknown result");
+				}
+			}
+		});
+	});
+	
+	maybe.addEventListener('click', function(e) {
+		Ti.API.info(data.id);
+		Titanium.Facebook.requestWithGraphPath('/' + data.id + '/maybe', {}, 'POST', function(e) {
+			if(e.success) {
+				Ti.API.info(e.result);
+			} else {
+				if(e.error) {
+					Ti.API.info(e.error);
+				} else {
+					Ti.API.info("Unknown result");
+				}
+			}
+		});
+	});
+	
+	reject.addEventListener('click', function(e) {
+		Ti.API.info(data.id);
+		Titanium.Facebook.requestWithGraphPath('/' + data.id + '/declined', {}, 'POST', function(e) {
+			if(e.success) {
+				Ti.API.info(e.result);
+			} else {
+				if(e.error) {
+					Ti.API.info(e.error);
+				} else {
+					Ti.API.info("Unknown result");
+				}
+			}
+		});
+	});
+	
+	var descriptionLabel = Ti.UI.createLabel({
+		top: "320dp",
+		height: "100%",
 		left: "5dp",
 		right: "5dp",
 		width: Titanium.Platform.osname==='iphone'?"320dp":"768dp",		
@@ -168,6 +242,11 @@ exports.EventView = function(data) {
 	scrollView.add(nameLabel);
 	scrollView.add(locationLabel);
 	scrollView.add(dateLabel);
+	
+	scrollView.add(attend);
+	scrollView.add(maybe);
+	scrollView.add(reject);
+	
 	scrollView.add(descriptionLabel);
 	
 	scrollView.add(imageView);
@@ -175,9 +254,7 @@ exports.EventView = function(data) {
 	self.add(backButton);
 	self.add(scrollView);
 
-	// TODO: add list of friends who RSVP that
-
-	Titanium.Facebook.requestWithGraphPath('/' + data.id, {}, 'GET', function(e) {
+	Titanium.Facebook.requestWithGraphPath('/' + data.id, {"limit": 0}, 'GET', function(e) {
 		if(e.success) {
 			var current_event = JSON.parse(e.result);
 			descriptionLabel.text = current_event.description;
@@ -187,6 +264,23 @@ exports.EventView = function(data) {
 			// TODO: maybe get owner with another request (/#{current_event.owner.id})
 			// TODO: cache all in json-based local storage
 			
+		} else {
+			if(e.error) {
+				Ti.API.info(e.error);
+			} else {
+				Ti.API.info("Unknown result");
+			}
+		}
+	});
+	
+	// below are all users who will attend
+	// TODO: add list of friends who RSVP that
+	// for this, check returned list against list of your friends (with underscore)
+	// AVOID dozens of get requests to /attending/user_id!!
+
+	Titanium.Facebook.requestWithGraphPath('/' + data.id + '/attending', {"limit": 0}, 'GET', function(e) {
+		if(e.success) {
+			Ti.API.info("Invited users: " + e.result);
 		} else {
 			if(e.error) {
 				Ti.API.info(e.error);

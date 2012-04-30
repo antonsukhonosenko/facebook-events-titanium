@@ -13,6 +13,13 @@ exports.LoginView = function(data) {
 		height : "40dp",
 		left: (Titanium.Platform.osname==='ipad'?"120dp":"5dp"),
 		right: (Titanium.Platform.osname==='ipad'?"120dp":"5dp"),
+		backgroundImage: "images/iphone_title_button_blue.png",
+		backgroundFocusedImage: "images/iphone_title_button_blue_focused.png",
+		backgroundSelectedImage: "images/iphone_title_button_blue_focused.png",
+		font: {
+			fontSize: 16,
+			fontWeight: "bold",
+		},
 	});
 
 	buttonFacebookLogin.addEventListener('click', function() {
@@ -26,4 +33,4 @@ exports.LoginView = function(data) {
 	self.add(buttonFacebookLogin);
 
 	return self;
-}
+};
