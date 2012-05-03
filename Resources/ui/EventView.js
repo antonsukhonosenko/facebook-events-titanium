@@ -2,13 +2,14 @@
  * @author Anton Sukhonosenko
  */
 
-exports.EventView = function(data) {
+exports.EventView = function(data, friends) {
 
 	// TODO: request additional info via graph API request
 	// TODO: add ability to checkin using Facebook Places
 	// TODO: rsvp and ban events
 	// TODO: event image and scroll view
 	
+	var _ = require('underscore')._;
 	require('date');  // This adds Date.js library, extending standard Date() object
 
 	var self = Ti.UI.createView({
@@ -17,6 +18,8 @@ exports.EventView = function(data) {
 		backgroundColor : "#fff",
 		zIndex: 103
 	});
+
+	self.friends = friends;
 	
 	var headerLabel = Ti.UI.createLabel({
 		text: "Event Details",
@@ -228,16 +231,7 @@ exports.EventView = function(data) {
 		});
 	});
 	
-	var descriptionLabel = Ti.UI.createLabel({
-		top: "320dp",
-		height: "100%",
-		left: "5dp",
-		right: "5dp",
-		width: Titanium.Platform.osname==='iphone'?"320dp":"768dp",		
-		font: {
-			fontSize: 12
-		}
-	});
+	
 
 	scrollView.add(nameLabel);
 	scrollView.add(locationLabel);
@@ -246,9 +240,7 @@ exports.EventView = function(data) {
 	scrollView.add(attend);
 	scrollView.add(maybe);
 	scrollView.add(reject);
-	
-	scrollView.add(descriptionLabel);
-	
+
 	scrollView.add(imageView);
 
 	self.add(backButton);
@@ -257,7 +249,21 @@ exports.EventView = function(data) {
 	Titanium.Facebook.requestWithGraphPath('/' + data.id, {"limit": 0}, 'GET', function(e) {
 		if(e.success) {
 			var current_event = JSON.parse(e.result);
-			descriptionLabel.text = current_event.description;
+			
+			var descriptionLabel = Ti.UI.createLabel({
+				text: current_event.description,
+				top: "390dp",
+				height: "auto",
+				width: "auto",
+				left: "5dp",
+				width: Titanium.Platform.osname==='iphone'?"320dp":"768dp",		
+				font: {
+					fontSize: 12
+				}
+			});
+			
+			scrollView.add(descriptionLabel);
+			
 			Ti.API.info(e.result);
 			
 			// TODO: get event image from https://graph.facebook.com/331218348435/picture request to show in events list tile view
@@ -273,7 +279,7 @@ exports.EventView = function(data) {
 		}
 	});
 	
-	// below are all users who will attend
+	// get all users who will attend
 	// TODO: add list of friends who RSVP that
 	// for this, check returned list against list of your friends (with underscore)
 	// AVOID dozens of get requests to /attending/user_id!!
@@ -281,6 +287,28 @@ exports.EventView = function(data) {
 	Titanium.Facebook.requestWithGraphPath('/' + data.id + '/attending', {"limit": 0}, 'GET', function(e) {
 		if(e.success) {
 			Ti.API.info("Invited users: " + e.result);
+			Ti.API.info("Friends: " + JSON.stringify(self.friends));
+			
+			var attending_ids = _.pluck(JSON.parse(e.result).data, 'id');
+			var friends_ids = _.pluck(self.friends, 'id');
+			var attending_friends_ids = _.intersect(attending_ids, friends_ids);
+
+			Ti.API.info("Attending friends: "+ attending_friends_ids.length);
+			
+			var i = -1;
+			_(attending_friends_ids).each(function (friend_id) {
+				// http://graph.facebook.com/{friendId}/picture
+				var userpic = Ti.UI.createImageView({
+					image: "https://graph.facebook.com/" + (friend_id || 0) + "/picture?type=large&access_token=" + Ti.Facebook.accessToken,
+					top: "320dp",
+					left: (++i*64+2),
+					height: "64dp",
+					width: "64dp",
+				});
+
+				scrollView.add(userpic);
+			});
+			
 		} else {
 			if(e.error) {
 				Ti.API.info(e.error);
