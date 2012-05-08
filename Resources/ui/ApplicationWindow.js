@@ -7,6 +7,8 @@ exports.ApplicationWindow = function() {
 	
 	require('date'); // This adds Date.js library, extending standard Date() object
 	
+	Ti.include('date.js');
+	
 	// TODO: use Ti.UI.iPad split view for iPad version
 
 	var self = Ti.UI.createWindow({
@@ -34,7 +36,7 @@ exports.ApplicationWindow = function() {
 			fontWeight: "bold"
 		},
 		zIndex: 100,
-		backgroundImage: "images/iphone_title_bar_blue.png",
+		backgroundImage: "/images/iphone_title_bar_blue.png",
 		backgroundRepeat: true,
 		width: "100%",
 	});
@@ -51,9 +53,9 @@ exports.ApplicationWindow = function() {
 			fontSize: 12,
 			fontWeight: "bold"
 		},
-		backgroundImage: "images/iphone_title_button_blue.png",
-		backgroundFocusedImage: "images/iphone_title_button_blue_focused.png",
-		backgroundSelectedImage: "images/iphone_title_button_blue_focused.png",		
+		backgroundImage: "/images/iphone_title_button_blue.png",
+		backgroundFocusedImage: "/images/iphone_title_button_blue_focused.png",
+		backgroundSelectedImage: "/images/iphone_title_button_blue_focused.png",		
 		zIndex: 102
 	});
 
@@ -61,7 +63,8 @@ exports.ApplicationWindow = function() {
 		autocapitalization: Ti.UI.TEXT_AUTOCAPITALIZATION_NONE,
 		autocorrect: false,
 		hintText: "search...",
-		top: "0dp"
+		top: "0dp",
+		backgroundColor: "red"
 	});
 
 	self.add(headerLabel);
@@ -72,13 +75,15 @@ exports.ApplicationWindow = function() {
 		height: (Titanium.Platform.osname==='ipad'?"936dp":"416dp"),
 		search: searchBar,
 		filterAttribute : 'name',
-		backgroundColor: "#fff",
+		backgroundColor: "green",
 		data : [{title:'loading...'}]
 	}); 
 	
 	var search_value = "";
 	
 	tableView.addEventListener('click', function(e) {
+		Ti.API.error("We're clicking table row")
+		
 		var eventView = require('ui/EventView').EventView(e.rowData.data, all_my_friends);
 		self.add(eventView);
 		
@@ -104,9 +109,9 @@ exports.ApplicationWindow = function() {
 			for(var i = 0; i < events_result.data.length; i++) {
 
 				// don't process any events from the past
-				if((Date.today()-Date.parse(events_result.data[i].start_time))>0) {
-					continue;
-				}
+				//if((Date.today()-Date.parse(events_result.data[i].start_time))>0) {
+				//	continue;
+				//}
 
 				var table_row_data = {
 					data : events_result.data[i],
@@ -121,6 +126,7 @@ exports.ApplicationWindow = function() {
 					left : "50dp",
 					top  : "0dp",
 					height: "44dp", 
+					width: Ti.UI.FILL,
 					text : events_result.data[i].name,
 					font : {
 						fontSize : 12
@@ -137,6 +143,15 @@ exports.ApplicationWindow = function() {
 
 				row.add(label);
 				row.add(image);
+				
+				row.addEventListener('click', function(e) {
+					Ti.API.error("We're clicking table row via second");
+					
+					var eventView = require('ui/EventView').EventView(e.rowData.data, all_my_friends);
+					self.add(eventView);
+					
+					Ti.API.info(JSON.stringify(e.rowData.data));
+				});
 
 				table_data_events.push(row);
 			}
@@ -166,14 +181,9 @@ exports.ApplicationWindow = function() {
 		Ti.Facebook.requestWithGraphPath('me/friends', {"limit":0}, 'GET', function(e) {
 			if(e.success) {
 				var result = JSON.parse(e.result);
-				
-				// Ti.API.info('Friends: '+ e.result);
-
 				all_my_friends = result.data;
 				
 				Ti.API.info('Friends found: '+ result.data.length);
-
-				// FIXME: not all friends are taken for now, only the first page
 
 				for (var i = 0; i < result.data.length; i++) {
 					

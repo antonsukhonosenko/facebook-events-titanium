@@ -33,7 +33,7 @@ exports.EventView = function(data, friends) {
 			fontWeight: "bold"
 		},
 		zIndex: 100,
-		backgroundImage: "images/iphone_title_bar_blue.png" // FIXME: strange <Error>: CGContextConcatCTM: invalid context 0x0 etc etc. yet it works
+		backgroundImage: "/images/iphone_title_bar_blue.png" // FIXME: strange <Error>: CGContextConcatCTM: invalid context 0x0 etc etc. yet it works
 	});
 	
 	self.add(headerLabel);
@@ -57,9 +57,9 @@ exports.EventView = function(data, friends) {
 			fontSize: 12,
 			fontWeight: "bold"
 		},
-		backgroundImage: "images/iphone_title_button_blue.png",
-		backgroundFocusedImage: "images/iphone_title_button_blue_focused.png",
-		backgroundSelectedImage: "images/iphone_title_button_blue_focused.png",
+		backgroundImage: "/images/iphone_title_button_blue.png",
+		backgroundFocusedImage: "/images/iphone_title_button_blue_focused.png",
+		backgroundSelectedImage: "/images/iphone_title_button_blue_focused.png",
 		zIndex: 102
 	});
 
