@@ -7,7 +7,7 @@ exports.ApplicationWindow = function() {
 	
 	require('date'); // This adds Date.js library, extending standard Date() object
 	
-	Ti.include('date.js');
+	// Ti.include('date.js');
 	
 	// TODO: use Ti.UI.iPad split view for iPad version
 
