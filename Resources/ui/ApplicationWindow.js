@@ -81,6 +81,7 @@ exports.ApplicationWindow = function() {
 	
 	var search_value = "";
 	
+	
 	tableView.addEventListener('click', function(e) {
 		Ti.API.error("We're clicking table row")
 		
@@ -143,7 +144,7 @@ exports.ApplicationWindow = function() {
 
 				row.add(label);
 				row.add(image);
-				
+				/*
 				row.addEventListener('click', function(e) {
 					Ti.API.error("We're clicking table row via second");
 					
@@ -152,6 +153,7 @@ exports.ApplicationWindow = function() {
 					
 					Ti.API.info(JSON.stringify(e.rowData.data));
 				});
+				*/
 
 				table_data_events.push(row);
 			}
